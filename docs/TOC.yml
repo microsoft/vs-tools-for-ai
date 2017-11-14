@@ -1,0 +1,41 @@
+- name: Visual Studio Tools for AI
+  href: index.yml
+  items:
+    - name: Overview
+      items:
+        - name: About AI Tools
+          href: about-ai-tools.md
+    - name: Installation
+      href: installation.md 
+    - name: Quickstarts
+      items: 
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: Tutorials 
+      items:
+        - name: TensorFlow + Azure Deep Learning VM                                        
+          href: tensorflow-vm.md
+    - name: Concepts 
+      items:
+        - name: Cloud compute targets
+          href: cloud-targets.md
+    - name: How-to guides
+      items:
+        - name: Train your model
+          href: train-your-model.md
+        - name: Manage projects
+          href: manage-projects.md
+        - name: Manage storage
+          href: manage-storage.md
+    - name: Samples
+      items:
+        - name: GitHub
+          href: https://github.com/Microsoft/samples-for-ai
+        - name: Machine Learning Gallery
+          href: https://gallery.cortanaintelligence.com/projects
+
+
+
+    
+
+
