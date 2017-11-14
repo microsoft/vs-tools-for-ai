@@ -4,26 +4,26 @@ Visual Studio Tools for AI is an extension to build, test, and deploy Deep Learn
 Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org), or other deep-learning frameworks today.  
 
 ## Quick Links
-**Installation & local machine preparation**
+**Getting Started**
 
-- [Installation](installation.md)
-- [Prepare local machine](prepare-localmachine.md)
+- [Installation](/docs/installation.md)
+- [Prepare local machine](/docs/prepare-localmachine.md)
 
 **Quickstarts**
 
-- [Tensorflow + Python](tensorflow-local.md)
-- [Create AI project from samples gallery](quickstart-00-project-from-AzureMachineLearning-gallery.md)
-- [Create AI project from existing code](quickstart-01-project-from-existing.md)
-- [Create AI project from template](quickstart-02-project-from-template.md)
-- [Create AI project from samples repository](quickstart-03-project-from-repository.md)
-- [Train MNIST using TensorFlow in Azure Batch AI](quickstart-04-train-Azure-BatchAI.md)
+- [Tensorflow + Python](/docs/tensorflow-local.md)
+- [Create AI project from samples gallery](/docs/quickstart-00-project-from-AzureMachineLearning-gallery.md)
+- [Create AI project from existing code](/docs/quickstart-01-project-from-existing.md)
+- [Create AI project from template](/docs/quickstart-02-project-from-template.md)
+- [Create AI project from samples repository](/docs/quickstart-03-project-from-repository.md)
+- [Train MNIST using TensorFlow in Azure Batch AI](/docs/quickstart-04-train-Azure-BatchAI.md)
     
 **Tutorials**
 
-- [TensorFlow + Azure Deep Learning VM](tensorflow-vm.md)
-- [Monitor Job History](job-history.md)
-- [Manage Storage](manage-storage.md)
-- [Monitor GPU Utilization](gpu-utilization.md)
+- [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
+- [Monitor Job History](/docs/job-history.md)
+- [Manage Storage](/docs/manage-storage.md)
+- [Monitor GPU Utilization](/docs/gpu-utilization.md)
 
 ## Develop, debug and deploy deep learning models and AI solutions  
 Use the productivity features of Visual Studio to accelerate AI innovation today. Use built-in code editor features like syntax highlighting, IntelliSense and text auto formatting. You can interactively test your deep learning application in your local environment using step-through debugging on local variables and models. 
