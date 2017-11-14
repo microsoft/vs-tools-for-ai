@@ -7,6 +7,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 **Installation & local machine preparation**
 
 - [Installation](installation.md)
+- [Prepare local machine](prepare-localmachine.md)
 
 **Quickstarts**
 
