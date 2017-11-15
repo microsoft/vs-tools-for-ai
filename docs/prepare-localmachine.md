@@ -76,7 +76,7 @@ Learn more about [Working with Python in Visual Studio](https://docs.microsoft.c
 When Visual Studio 2017 installation starts, please choose **Python development** workload for Python language support.
 
 Note that a 64-bit Python 3.6 will also be installed automatically.
-If you have installed Python 3.5, please refer to the following "Setting up the default Python environment in Visual Studio" subsection.
+If you have installed Python 3.5, please refer to the following "Setting up the default Python environment" subsection.
 
 ![Working with Python in Visual Studio 2017](./media/prepare-local-machine/install_python_tools_vs2017.png)
 
@@ -88,7 +88,7 @@ When Visual Studio 2015 installation starts, please choose **Custom** type, and 
 
 ### Setting up the default Python environment
 
-Users need to setup the default Python environment in Visual Studio for AI projects if there are multiple ones installed except the recommended Python 3.5.
+Users need to setup the default Python environment in Visual Studio for AI projects if there are multiple ones other than the recommended Python 3.5 installed.
 E.g. Visual Studio 2017's Python development workload installs a 64-bit Python 3.6 automatically.
 Or users install Anaconda and create several virtual Python environments.
 To set the default Python environment globally for Visual Studio, please go to menu ***Tools > Python > Python Environments*** (Visual Studio 2017), or ***Tools > Python Tools > Python Environments*** (Visual Studio 2015).
