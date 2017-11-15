@@ -86,6 +86,17 @@ When Visual Studio 2015 installation starts, please choose **Custom** type, and 
 
 ![Working with Python in Visual Studio 2015](./media/prepare-local-machine/install_python_tools_vs2015.png)
 
+### Setting up the default Python environment
+
+Users need to setup the default Python environment in Visual Studio for AI projects if there are multiple ones installed except the recommended Python 3.5.
+E.g. Visual Studio 2017's Python development workload installs a 64-bit Python 3.6 automatically.
+Or users install Anaconda and create several virtual Python environments.
+To set the default Python environment globally for Visual Studio, please go to menu ***Tools > Python > Python Environments*** (Visual Studio 2017), or ***Tools > Python Tools > Python Environments*** (Visual Studio 2015).
+Then, select **Python 3.5 (64 bit)** and click **Make this the default environment for new projects** button.
+
+![Setting up the default Python environment](./media/prepare-local-machine/install_python_setup_default.png)
+
+
 ## NumPy and SciPy
 
 - **NumPy** is a general-purpose array-processing package designed to efficiently manipulate large multi-dimensional arrays of arbitrary records without sacrificing too much speed for small multi-dimensional arrays.
