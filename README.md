@@ -39,7 +39,8 @@ Windows 10 is recommended for the best compatibility.
 Visual Studio Tools for AI works on both Visual Studio 2017 and 2015.
 [Community](https://www.visualstudio.com/downloads/), Professional and Enterprise versions are supported.
 
-The installable package is hosted on Visual Studio marketplace: [VS 2017](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017), [VS 2015](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2015).
+The installable package is hosted on Visual Studio marketplace: [for VS 2017](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017),
+and [for VS 2015](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2015).
 
 ## Develop, debug and deploy deep learning models and AI solutions  
 Use the productivity features of Visual Studio to accelerate AI innovation today. Use built-in code editor features like syntax highlighting, IntelliSense and text auto formatting. You can interactively test your deep learning application in your local environment using step-through debugging on local variables and models. 
