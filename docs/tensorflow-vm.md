@@ -26,9 +26,11 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 - Launch Visual Studio and select **File > Open > Project/Solution**.
 
-- Select the **Tensorflow Examples** folder from the samples repository dowloaded and open the **TensorflowExamples.sln** file. 
+- Select the **Tensorflow Examples** folder from the samples repository downloaded  
 
 ![Open project](./media/tensorflow-local/open-project.png)
+
+- Open the **TensorflowExamples.sln** file.
 
 ![Open solution](./media/tensorflow-local/open-solution.png)
 

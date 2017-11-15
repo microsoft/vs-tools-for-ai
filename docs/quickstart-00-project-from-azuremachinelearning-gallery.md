@@ -20,16 +20,16 @@ Once you've [installed Visual Studio Tools for AI](installation.md), it's easy t
 
 1. For this Quickstart, select the "**MNIST using TensorFlow**" sample and click **Install**. Provide the 
 
- - **Resource Group**: Azure resource group where your metadata will be stored
- - **Account**: Azure Machine Learning experimentation Account
- - **Workspace**: Azure Machine Learning workspace
- - **Project Type**: The machine learning framework. In this case choose **TensorFlow**
- - **Add to Solution**: determines whether to add to your current Visual Studio Solution or a create and open a new solution
- - **Project Path**: Location to save the code
- - **Project Name**: Type **TensorFlowMNIST**
+  - **Resource Group**: Azure resource group where your metadata will be stored
+  - **Account**: Azure Machine Learning experimentation Account
+  - **Workspace**: Azure Machine Learning workspace
+  - **Project Type**: The machine learning framework. In this case choose **TensorFlow**
+  - **Add to Solution**: determines whether to add to your current Visual Studio Solution or a create and open a new solution
+  - **Project Path**: Location to save the code
+  - **Project Name**: Type **TensorFlowMNIST**
    
 
-    ![Resulting project when using the Python Application template](media/new-AzureSampleProject.png)
+    ![Resulting project when using the Python Application template](media/new-azuresampleproject.png)
 
 1. Visual Studio creates the project file (a `.pyproj` file on disk) along with other files defined in the sample. With the "MNIST" template, the project contains several files.
 
