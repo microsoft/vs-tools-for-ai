@@ -303,7 +303,7 @@ pip3.5 install chainer==3.0.0
 
 # Using an installer to setup deep learning frameworks
 
-[Here] has a simple installer for users to setup deep learning frameworks on Windows:
+[Here](https://github.com/Microsoft/samples-for-ai/tree/master/installer) has a simple installer for users to setup deep learning frameworks on Windows:
 
 - Refer to the above subsection to install NVIDIA GPU driver, CUDA and cuDNN.
 - Install latest Python **3.5**. Other Python versions are not supported yet.
