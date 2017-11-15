@@ -6,7 +6,7 @@ To install, download from the [Visual Studio MarketPlace](http://aka.ms/vstoolsf
 
 1. **Tools**> **Extensions and Updates** 
 
-![extensions](media\installation\extensions.png)
+![extensions](media/installation/extensions.png)
 
 1. **Search** in upper right-hand corner for "Tools for AI"
 2. Select **Visual Studio Tools for AI**
