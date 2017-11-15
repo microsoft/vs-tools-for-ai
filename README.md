@@ -42,8 +42,8 @@ Visual Studio Tools for AI works with both Visual Studio 2017 and 2015 on Window
 This extension is hosted on Visual Studio MarketPlace in two
 [VS 2017](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017),
 and [VS 2015](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2015) packages.
-When downloading, the package file name may incorrectly end with **".zip"**.
-Please save it as **".vsix"** and then install locally.
+**When downloading, the package file name may incorrectly end with ".zip".
+Please save it as ".vsix" and then install locally.**
 
 For the Visual Studio Code version please see [Visual Studio Code Tools for AI](http://aka.ms/vscodetoolsforai)
 
