@@ -11,9 +11,12 @@ Before you begin, ensure you have the following installed:
 ### Google TensorFlow 
 
 Run the following command in a terminal. 
+
+
 ```cmd
 C:\>pip install tensorflow
 ```
+
 or if you have an Nvidia GPU
 
 ```cmd
@@ -44,5 +47,4 @@ Download this [GitHub repository](https://github.com/Microsoft/samples-for-ai) c
 
 ![Sample output from console](/media/tensorflow-local/console-output.png)
 
-> [!div class="nextstepaction"]
 > [Train a TensorFlow model in the cloud](tensorflow-vm.md)

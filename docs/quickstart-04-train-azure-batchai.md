@@ -24,16 +24,16 @@ It's integrated with Visual Studio Tools for AI so you can dynamically scale out
 
 1. Launch Visual Studio. Open the **Server Explorer** by opening the **AI Tools** menu and choosing **Select Cluster**	
 
-    ![Cluster chooser](media/select-cluster.png)
+    ![Cluster chooser](/media/select-cluster.png)
 
 	 
 2. Expand **AI Tools**. Any Batch AI resources you have will be auto-detected and appear in the Server Explorer. 
 	
-    ![Sample gallery](media/batchai.png)
+    ![Sample gallery](/media/batchai.png)
 
 3. Select **View > Team Explorer...** to open the **Team Explorer** window in which you can connect to GitHub or Visual Studio Team Services, or clone a repository.
 
-    ![Team explorer window showing Visual Studio Team Services, GitHub, and cloning a repository](media/team-explorer.png)
+    ![Team explorer window showing Visual Studio Team Services, GitHub, and cloning a repository](/media/team-explorer.png)
 
 4. In the URL field under **Local Git Repositories**, enter `https://github.com/Microsoft/samples-for-ai`, enter a folder for the cloned files, and select **Clone**.
 
@@ -42,15 +42,15 @@ It's integrated with Visual Studio Tools for AI so you can dynamically scale out
 
 5. When cloning is complete, click **File > Open Solution > Project / Solution**
 	
-	![Sample gallery](media/open-solution.png)
+	![Sample gallery](/media/open-solution.png)
 
 5. Open **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** in the directory you cloned the repository 
 
-	![Sample gallery](media/tensorflowexamples.png)
+	![Sample gallery](/media/tensorflowexamples.png)
 
 5. Set MNIST project as the **Startup Project **
 
-	![Sample gallery](media/mnist-startup.png)
+	![Sample gallery](/media/mnist-startup.png)
 
 1. **Right-click **MNIST project, **Submit Job**
 
@@ -58,4 +58,4 @@ It's integrated with Visual Studio Tools for AI so you can dynamically scale out
 
 1. Select your **Azure Batch AI** cluster, then click **Import**. Select the `AzureBatchAI_TF_MNIST.json` file to quickly populate some default values like which Docker Image to use. Then click **Submit**
 
-	![Sample gallery](media/submit-batch.png)
+	![Sample gallery](/media/submit-batch.png)
