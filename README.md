@@ -1,4 +1,4 @@
-# Visual Studio Tools for AI
+ # Visual Studio Tools for AI
 Visual Studio Tools for AI is an extension to build, test, and deploy Deep Learning / AI solutions. It seamlessly integrates with Azure Machine Learning for robust experimentation capabilities, including but not limited to submitting data preparation and model training jobs transparently to different compute targets. Additionally, it provides support for custom metrics and run history tracking, enabling data science reproducibility and auditing. Enterprise ready collaboration, allow to securely work on project with other people.
 
 Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org), or other deep-learning frameworks today.  
@@ -35,13 +35,15 @@ Windows 10 is recommended for the best compatibility.
 >
 > 32-bit Windows are not supported.
 
-# Supported Visual Studio
+# Supported Visual Studio versions
 Visual Studio Tools for AI works with both Visual Studio 2017 and 2015 on Windows.
 [Community](https://www.visualstudio.com/downloads/), Professional and Enterprise editions are supported.
 
 This extension is hosted on Visual Studio MarketPlace in two
 [VS 2017](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017),
 and [VS 2015](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2015) packages.
+
+For the Visual Studio Code version please see [Visual Studio Code Tools for AI](http://aka.ms/vscodetoolsforai)
 
 ## Develop, debug and deploy deep learning models and AI solutions  
 Use the productivity features of Visual Studio to accelerate AI innovation today. Use built-in code editor features like syntax highlighting, IntelliSense and text auto formatting. You can interactively test your deep learning application in your local environment using step-through debugging on local variables and models. 
