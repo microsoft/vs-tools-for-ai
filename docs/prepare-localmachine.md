@@ -307,7 +307,7 @@ pip3.5 install chainer==3.0.0
 
 - Refer to the above subsection to install NVIDIA GPU driver, CUDA and cuDNN.
 - Install latest Python **3.5**. Other Python versions are not supported yet.
-- Run the following command in a terminal
+- Run the following commands in a terminal:
     ```bash
     git clone https://github.com/Microsoft/samples-for-ai.git
     cd samples-for-ai
