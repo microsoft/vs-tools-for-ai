@@ -6,6 +6,8 @@ To install, download from the [Visual Studio MarketPlace](https://marketplace.vi
 Note this extension has both
 [VS 2017](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017),
 and [VS 2015](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2015) packages.
+When downloading, the package file name may incorrectly end with **".zip"**.
+Please save it as **".vsix"** and then install locally.
 
 1. **Tools**> **Extensions and Updates** 
 
