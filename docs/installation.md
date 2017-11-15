@@ -1,17 +1,3 @@
----
-title: AI Tools for Visual Studio
-description: Installation of AI Tools for Visual Studio
-keywords: ai, visual studio
-author: lisawong19
-ms.author: liwong
-manager: routlaw
-ms.date: 11/13/2017
-ms.topic: article
-ms.technology: visual studio
-ms.devlang: multiple
-ms.service: multiple
----
-
 # Installing Visual Studio Tools for AI
 
 This extension works with [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/) Community edition or higher. 
