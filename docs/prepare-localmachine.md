@@ -21,7 +21,7 @@ Currently, CUDA Toolkit 8.0 is required by deep learning frameworks.
 To install CUDA
 
 - Visit this [site](https://developer.nvidia.com/cuda-80-ga2-download-archive), download CUDA and install it.
-- Make sure to install the CUDA runtime libraries, and then add CUDA binary path to the %PATH% or $Path environment variable.
+- Make sure to install the CUDA runtime libraries, and then add CUDA binary path to the %PATH% or $PATH environment variable.
 - On Windows, this path is "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" by default.
 
 ![install CUDA on Windows](./media/prepare-local-machine/install_cuda_win.png)
@@ -32,7 +32,7 @@ To install CUDA
 
 To install cuDNN
 - Visit [here](https://developer.nvidia.com/rdp/cudnn-download) to download and install the latest package.
-- Ensure to add the directory containing cuDNN binary to the %PATH% or $Path environment variable.
+- Ensure to add the directory containing cuDNN binary to the %PATH% or $PATH environment variable.
 - On Windows, you can copy cudnn64_6.dll to "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin".
 
 > [!NOTE]
