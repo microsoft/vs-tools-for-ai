@@ -27,6 +27,20 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 - [Monitor GPU Utilization](/docs/gpu-utilization.md)
 - [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
 
+# Supported Operating Systems
+Currently this extension supports 64-bit Windows operating systems.
+Windows 10 is recommended for the best compatibility.
+
+> [!NOTE]
+>
+> 32-bit Windows are not supported.
+
+# Supported Visual Studio
+Visual Studio Tools for AI works on both Visual Studio 2017 and 2015.
+[Community](https://www.visualstudio.com/downloads/), Professional and Enterprise versions are supported.
+
+The installable package is hosted on Visual Studio marketplace: [VS 2017](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017), [VS 2015](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2015).
+
 ## Develop, debug and deploy deep learning models and AI solutions  
 Use the productivity features of Visual Studio to accelerate AI innovation today. Use built-in code editor features like syntax highlighting, IntelliSense and text auto formatting. You can interactively test your deep learning application in your local environment using step-through debugging on local variables and models. 
 
@@ -47,9 +61,6 @@ This extension makes it easy to train models on your local computer or you can s
 [Learn more about training models in the cloud](/docs/tensorflow-vm.md) 
  
 ![submit job](/docs/media/submitjobs.png)
-
-# Supported Operating Systems
-Currently this extension supports Windows 64-bit operating systems
 
 # Support
 Support for this extension is provided on our [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues). You can submit a bug report, a feature suggestion or participate in discussions.
