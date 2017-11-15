@@ -21,7 +21,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
     
 **Tutorials**
 
-- [Monitor & Visualize with TensorBoard](/docs/tensorboard.md)
+- [Monitor & Visualize with TensorBoard](/docs/monitor-tensorboard.md)
 - [Monitor Job History](/docs/job-history.md)
 - [Manage Storage](/docs/manage-storage.md)
 - [Monitor GPU Utilization](/docs/gpu-utilization.md)
