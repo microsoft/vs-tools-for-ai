@@ -1,6 +1,6 @@
 # Preparing your environment
 
-Before training deep learning models on your local computer you should make sure you have the latest applicable prerequisites installed. This includes making sure the latest drivers and libraries for your NVIDIA GPU (if you have one). You should also ensure you have installed Python and Python libraries such as NumPy, SciPy, and appropriate deep learning frameworks such as Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch and/or Chainer.
+Before training deep learning models on your local or remote computer you should make sure you have the latest applicable prerequisites installed. This includes making sure the latest drivers and libraries for your NVIDIA GPU (if you have one). You should also ensure you have installed Python and Python libraries such as NumPy, SciPy, and appropriate deep learning frameworks such as Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch and/or Chainer.
 
 > [!NOTE]
 >
@@ -44,7 +44,7 @@ To install cuDNN
 ## Python
 
 Python has been the primary programming language for deep learning applications.
-**64-bit** Python distribution is required, and the latest [Python 3.5](https://www.python.org/ftp/python/3.5.4/python-3.5.4-amd64.exe) is recommended for the best compatibility.
+**64-bit** Python distribution is required, and the latest [Python 3.5](https://www.python.org/downloads/release/python-354) is recommended for the best compatibility.
 
 ### To install Python on Windows
 - We suggest to install the Python launcher for yourself only, and add Python to the %PATH% environment variable.
@@ -56,17 +56,40 @@ Deep learning frameworks rely on pip for their own installation.
 
 Then, we need to verify whether Python 3.5 is installed correctly, and upgrade pip to the latest version by executing the following commands in a terminal:
 
-```cmd
-C:\Users\test>python -V
-Python 3.5.4
+- **Windows**
+    ```cmd
+    C:\Users\test>python -V
+    Python 3.5.4
 
-C:\Users\test>pip3.5 -V
-pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+    C:\Users\test>pip3.5 -V
+    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-C:\Users\test>python -m pip install -U pip
-```
+    C:\Users\test>python -m pip install -U pip
+    ```
 
-## Working with Python in Visual Studio
+- **macOS**
+    ```bash
+    MyMac:~ test$ python3.5 -V
+    Python 3.5.4
+
+    MyMac:~ test$ pip3.5 -V
+    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+
+    MyMac:~ test$ python3.5 -m pip install -U pip
+    ```
+
+- **Linux**
+    ```bash
+    test@MyLinux:~$ python3.5 -V
+    Python 3.5.4
+
+    test@MyLinux:~$ pip3.5 -V
+    pip 9.0.1 from /usr/local/lib/python3.5/dist-packages (python 3.5)
+
+    test@MyLinux:~$ sudo python3.5 -m pip install -U pip
+    ```
+
+## Working with Python in Visual Studio on Windows
 
 Visual Studio provides [open-source](https://github.com/Microsoft/ptvs) support for the Python language through the Python development and Data Science workloads (Visual Studio 2017) and the free Python Tools for Visual Studio extension (Visual Studio 2015 and earlier).
 Learn more about [Working with Python in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/python/python-in-visual-studio) for more details.
