@@ -1,5 +1,5 @@
-# Run a TensorFlow model in the cloud
-In this tutorial, we will run a TensorFlow model using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) in an Azure [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) virtual machine. 
+# Train a TensorFlow model in the cloud
+In this tutorial, we will train a TensorFlow model using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) in an Azure [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) virtual machine. 
 
 The MNIST database has a training set of 60,000 examples, and a test set of 10,000 examples of handwritten digits.
 
