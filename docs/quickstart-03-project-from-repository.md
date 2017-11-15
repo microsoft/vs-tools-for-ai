@@ -4,7 +4,7 @@ Once you've [Visual Studio Tools for AI](installation.md), you can easily clone 
 
 1. To connect to GitHub repositories, run the Visual Studio installer, select **Modify**, and select the **Individual components** tab. Scroll down to the **Code tools** section, select **GitHub extension for Visual Studio**, and select **Modify**.
     
-    ![Selecting the GitHub extension in the Visual Studio installer](/media/installation-github-extension.png)
+    ![Selecting the GitHub extension in the Visual Studio installer](./media/installation-github-extension.png)
     
 2. Launch Visual Studio.
 
@@ -19,7 +19,7 @@ Once you've [Visual Studio Tools for AI](installation.md), you can easily clone 
 
 5. When cloning is complete, double-click the repository folder at the bottom of Team Explorer to navigate to the repository dashboard. Under **Solutions**, select **New...**.
 
-    ![Team explorer window, creating a new project from a clone](/media/team-explorer-new-project.png)
+    ![Team explorer window, creating a new project from a clone](./media/team-explorer-new-project.png)
 
 6. In the **New Project** dialog that appears, select "**From Existing Python Code**", specify a name for the project, set **Location** to the same folder as the repository, and select **OK**. In the wizard that appears, select **Finish**.
 
@@ -32,6 +32,6 @@ Once you've [Visual Studio Tools for AI](installation.md), you can easily clone 
 
 11. When the program runs successfully, you'll see it start to download your training and test dataset, then train the model and output your error rate. You want error rate to decrease over tinme
 
-    ![First output from the Python MNIST program](/media/TensorFlow-MNIST-Running.png)
+    ![First output from the Python MNIST program](./media/TensorFlow-MNIST-Running.png)
 
 > If you are using Anaconda and get an error about missing numpy, you may need to change your python environment you may need to [change your python environment to use Anaconda](https://docs.microsoft.com/en-us/visualstudio/python/python-environments) 

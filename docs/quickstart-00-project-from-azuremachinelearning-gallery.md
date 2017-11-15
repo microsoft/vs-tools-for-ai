@@ -8,15 +8,15 @@ Once you've [installed Visual Studio Tools for AI](installation.md), it's easy t
 
 1. Launch Visual Studio. Open the **Server Explorer** by opening the **AI Tools** menu and choosing **Select Cluster**	
 
-    ![Cluster chooser](/media/select-cluster.png)
+    ![Cluster chooser](./media/select-cluster.png)
 
 1. Sign in to your Azure Machine Learning subscription by right-clicking the **Azure Machine Learning** node in the Server Explorer then select **Login** and follow the directions.
 
-    ![login](/media/azureml-login.png)
+    ![login](./media/azureml-login.png)
  
 2. Select **AI Tools > Azure Machine Learning Sample Gallery**. 
 	
-    ![Sample gallery](/media/gallery.png)
+    ![Sample gallery](./media/gallery.png)
 
 1. For this Quickstart, select the "**MNIST using TensorFlow**" sample and click **Install**. Provide the 
 

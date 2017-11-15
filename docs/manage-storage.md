@@ -7,12 +7,12 @@ You can browse all storage on the remote machine or Azure file share to enable u
 2. Expand the remote machine or Batch AI compute context
 3. Right click **Storage** then click **Browse**
 
-	![storage](/media/browse-storage.png)
+	![storage](./media/browse-storage.png)
 
 ## To access job specific data on the remote machine or file share
 1. Open the [Job History](job-history.md)
 2. Select the job
 3. Click **Working Folder** or click StdOut / Stderr for quick access to these important log files 
 
-	![storage](/media/job-workingfolder.png)
+	![storage](./media/job-workingfolder.png)
 
