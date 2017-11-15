@@ -30,8 +30,16 @@ Once you've [Visual Studio Tools for AI](installation.md), you can easily clone 
 10. Press Ctrl+F5 or select **Debug > Start Without Debugging** to run the program. If you see an `, re-check the working directory setting in the previous step.
 
 
-11. When the program runs successfully, you'll see it start to download your training and test dataset, then train the model and output your error rate. You want error rate to decrease over tinme
+11. When the program runs successfully, you'll see it start to download your training and test dataset, then train the model and output your error rate. You want error rate to decrease over time
 
     ![First output from the Python MNIST program](./media/tensorflow-mnist-running.png)
 
 > If you are using Anaconda and get an error about missing numpy, you may need to change your python environment you may need to [change your python environment to use Anaconda](https://docs.microsoft.com/en-us/visualstudio/python/python-environments) 
+
+11. You can visualize the progress with TensorBoard. Right click your project and click **Run TensorBoard** then select the directory of your output TensorBoard logs.
+
+    ![run tensorboard](./media/run-tensorboard.png)
+
+11. Notice the error decreasing overtime, which means the quality is improving
+
+    ![run tensorboard](./media/tensorboard.png)

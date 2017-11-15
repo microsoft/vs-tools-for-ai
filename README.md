@@ -21,10 +21,11 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
     
 **Tutorials**
 
-- [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
+- [Monitor & Visualize with TensorBoard](/docs/tensorboard.md)
 - [Monitor Job History](/docs/job-history.md)
 - [Manage Storage](/docs/manage-storage.md)
 - [Monitor GPU Utilization](/docs/gpu-utilization.md)
+- [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
 
 ## Develop, debug and deploy deep learning models and AI solutions  
 Use the productivity features of Visual Studio to accelerate AI innovation today. Use built-in code editor features like syntax highlighting, IntelliSense and text auto formatting. You can interactively test your deep learning application in your local environment using step-through debugging on local variables and models. 
