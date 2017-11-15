@@ -32,6 +32,6 @@ Once you've [Visual Studio Tools for AI](installation.md), you can easily clone 
 
 11. When the program runs successfully, you'll see it start to download your training and test dataset, then train the model and output your error rate. You want error rate to decrease over tinme
 
-    ![First output from the Python MNIST program](./media/TensorFlow-MNIST-Running.png)
+    ![First output from the Python MNIST program](./media/tensorflow-mnist-running.png)
 
 > If you are using Anaconda and get an error about missing numpy, you may need to change your python environment you may need to [change your python environment to use Anaconda](https://docs.microsoft.com/en-us/visualstudio/python/python-environments) 
