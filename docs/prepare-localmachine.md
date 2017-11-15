@@ -44,7 +44,7 @@ To install cuDNN
 ## Python
 
 Python has been the primary programming language for deep learning applications.
-**64-bit** Python distribution is required, and [Python 3.5.4](https://www.python.org/downloads/release/python-354/) is recommended for the best compatibility.
+**64-bit** Python distribution is required, and the latest [Python 3.5](https://www.python.org/ftp/python/3.5.4/python-3.5.4-amd64.exe) is recommended for the best compatibility.
 
 ### To install Python on Windows
 - We suggest to install the Python launcher for yourself only, and add Python to the %PATH% environment variable.
@@ -56,32 +56,35 @@ Deep learning frameworks rely on pip for their own installation.
 
 Then, we need to verify whether Python 3.5 is installed correctly, and upgrade pip to the latest version by executing the following commands in a terminal:
 
-- **Windows**
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
+```cmd
+C:\Users\test>python -V
+Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+C:\Users\test>pip3.5 -V
+pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+C:\Users\test>python -m pip install -U pip
+```
 
-- **macOS**
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
+## Working with Python in Visual Studio
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+Visual Studio provides [open-source](https://github.com/Microsoft/ptvs) support for the Python language through the Python development and Data Science workloads (Visual Studio 2017) and the free Python Tools for Visual Studio extension (Visual Studio 2015 and earlier).
+Learn more about [Working with Python in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/python/python-in-visual-studio) for more details.
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+### Visual Studio 2017
 
-## Python on Visual Studio
+When Visual Studio 2017 installation starts, please choose **Python development** workload for Python language support.
 
-Python is fully supported in Visual Studio through extensions.
-Learn more about install [Python for Visual Studio Tools](https://docs.microsoft.com/en-us/visualstudio/python/installation) for more details.
+Note that a 64-bit Python 3.6 will also be installed automatically.
+If you have installed Python 3.5, please refer to the following "Setting up the default Python environment in Visual Studio" subsection.
+
+![Working with Python in Visual Studio 2017](./media/prepare-local-machine/install_python_tools_vs2017.png)
+
+### Visual Studio 2015
+
+When Visual Studio 2015 installation starts, please choose **Custom** type, and then select **Python Tools for Visual Studio**.
+
+![Working with Python in Visual Studio 2015](./media/prepare-local-machine/install_python_tools_vs2015.png)
 
 ## NumPy and SciPy
 

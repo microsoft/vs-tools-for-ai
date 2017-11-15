@@ -36,7 +36,7 @@ Windows 10 is recommended for the best compatibility.
 > 32-bit Windows are not supported.
 
 # Supported Visual Studio
-Visual Studio Tools for AI works with both Visual Studio 2017 and 2015.
+Visual Studio Tools for AI works with both Visual Studio 2017 and 2015 on Windows.
 [Community](https://www.visualstudio.com/downloads/), Professional and Enterprise editions are supported.
 
 This extension is hosted on Visual Studio MarketPlace in two
