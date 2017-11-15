@@ -118,29 +118,54 @@ pip3.5 install -U numpy scipy
 
 The [Microsoft Cognitive Toolkit](https://cntk.ai) is a unified deep-learning toolkit that describes neural networks as a series of computational steps via a directed graph. CNTK supports both Python and BrainScript programming languages.
 
-> [!NOTE]
->
-> CNTK currently does not support macOS.
+To install CNTK Python package, see [how to install CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine) for details.
 
-To install CNTK Python package, see [how to install CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine)
+Briefly, to install CNTK Python package, run the following command in a terminal:
+- With GPU
+    ```cmd
+    pip3.5 install https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.2-cp35-cp35m-win_amd64.whl
+    ```
+- Without GPU
+    ```cmd
+    pip3.5 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-win_amd64.whl
+    ```
+
+To install CNTK BrainScript package, run the following command in a terminal:
+- Visit [here](https://github.com/Microsoft/CNTK/releases/tag/v2.2) to download the CPU-only or GPU with 1bit-SGD package.
+    > [!NOTE]
+	>
+    > CNTK GPU-1bit-SGD version is licensed under a specific [1bit-SGD License](https://docs.microsoft.com/en-us/cognitive-toolkit/cntk-1bit-sgd-license) which is MORE restrictive, than the major CNTK License.
+
+- Decompress the zip file to "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK". Please create this folder if it does not exist.
+- Add "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\cntk" to the %PATH% environment variable.
+- Install Microsoft MPI from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\MSMpiSetup.exe", which is required by CNTK.
+- Install Microsoft Visual C++ 2015 Redistributable from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\VS2015\vc_redist.x64.exe" if it is not installed yet.
 
 ## TensorFlow
 
 [TensorFlow](https://www.tensorflow.org/) is an open source software library for numerical computation using data flow graphs.
 Please refer to [here](https://www.tensorflow.org/install/) for detailed installation.
 
-> [!NOTE]
->
-> As of version 1.2, TensorFlow no longer provides GPU support for macOS.
+To install TensorFlow, run the following command in a terminal:
+- With GPU
+    ```bash
+    pip3.5 install tensorflow-gpu==1.4.0
+    ```
+- Without GPU
+    ```bash
+    pip3.5 install tensorflow==1.4.0
+    ```
 
 ## Caffe2
 
 [Caffe2](https://caffe2.ai/) is a lightweight, modular, and scalable deep learning framework.
 Building on the original Caffe, Caffe2 is designed with expression, speed, and modularity in mind.
 
-Currently, there's no prebuilt Caffe2 python wheel package available.
-
+Currently, there's no official prebuilt Caffe2 python wheel package available.
 Please visit [here](https://caffe2.ai/docs/getting-started.html) to build from source code.
+
+> [!NOTE]
+> [here](https://github.com/Microsoft/samples-for-ai/tree/master/installer) has a third-party Caffe2 0.8.1 Windows wheel package (supports both GPU and CPU).
 
 ## MXNet
 
