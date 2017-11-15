@@ -120,15 +120,29 @@ The [Microsoft Cognitive Toolkit](https://cntk.ai) is a unified deep-learning to
 
 To install CNTK Python package, see [how to install CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine) for details.
 
+> [!NOTE]
+>
+> CNTK currently does not support macOS.
+
 Briefly, to install CNTK Python package, run the following command in a terminal:
-- With GPU
-    ```cmd
-    pip3.5 install https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.2-cp35-cp35m-win_amd64.whl
-    ```
-- Without GPU
-    ```cmd
-    pip3.5 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-win_amd64.whl
-    ```
+- **Windows**
+    - With GPU
+        ```cmd
+        pip3.5 install https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.2-cp35-cp35m-win_amd64.whl
+        ```
+    - Without GPU
+        ```cmd
+        pip3.5 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-win_amd64.whl
+        ```
+- **Linux**
+    - With GPU
+        ```bash
+        pip3.5 install https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.2-cp35-cp35m-linux_x86_64.whl
+        ```
+    - Without GPU
+        ```bash
+        pip3.5 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-linux_x86_64.whl
+        ```
 
 To install CNTK BrainScript package, run the following command in a terminal:
 - Visit [here](https://github.com/Microsoft/CNTK/releases/tag/v2.2) to download the CPU-only or GPU with 1bit-SGD package.
@@ -136,10 +150,19 @@ To install CNTK BrainScript package, run the following command in a terminal:
 	>
     > CNTK GPU-1bit-SGD version is licensed under a specific [1bit-SGD License](https://docs.microsoft.com/en-us/cognitive-toolkit/cntk-1bit-sgd-license) which is MORE restrictive, than the major CNTK License.
 
-- Decompress the zip file to "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK". Please create this folder if it does not exist.
-- Add "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\cntk" to the %PATH% environment variable.
-- Install Microsoft MPI from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\MSMpiSetup.exe", which is required by CNTK.
-- Install Microsoft Visual C++ 2015 Redistributable from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\VS2015\vc_redist.x64.exe" if it is not installed yet.
+- **Windows**
+    - Decompress the zip file to "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK". Please create this folder if it does not exist.
+    - Add "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\cntk" to the %PATH% environment variable.
+    - Install Microsoft MPI from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\MSMpiSetup.exe", which is required by CNTK.
+    - Install Microsoft Visual C++ 2015 Redistributable from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\VS2015\vc_redist.x64.exe" if it is not installed yet.
+
+- **Linux**
+    - Decompress the zip file to your home directory "~/".
+    - Add "~/cntk/cntk/bin" to the $PATH environment variable.
+    - Install OpenMPI by running the following command in a terminal:
+        ```bash
+        sudo apt-get install libopenmpi-dev
+        ```
 
 ## TensorFlow
 
