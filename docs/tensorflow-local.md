@@ -1,5 +1,5 @@
 
-# Run a TensorFlow model locally 
+# Train a TensorFlow model locally 
 
 In this quickstart, we will run a TensorFlow model with the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset locally in AI Tools. 
 The MNIST database has a training set of 60,000 examples, and a test set of 10,000 examples of handwritten digits. 
@@ -12,7 +12,12 @@ Before you begin, ensure you have the following installed:
 
 Run the following command in a terminal. 
 ```cmd
-C:\>pip.exe install tensorflow==1.2.1
+C:\>pip install tensorflow
+```
+or if you have an Nvidia GPU
+
+```cmd
+C:\>pip install tensorflow-gpu
 ```
 
 ### NumPy and SciPy 
@@ -21,15 +26,15 @@ Install [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) and [SciPy](h
 ### Download sample code
 Download this [GitHub repository](https://github.com/Microsoft/samples-for-ai) containing samples for getting started with deep learning across TensorFlow, CNTK, Theano and more. 
 
-## Load and run model 
+## Open solution and train model 
 
 - Launch Visual Studio and select **File > Open > Project/Solution**.
 
 - Select the **Tensorflow Examples** folder from the samples repository dowloaded and open the **TensorflowExamples.sln** file. 
 
-![Open project](media\tensorflow-local\open-project.png)
+![Open project](/media/tensorflow-local/open-project.png)
 
-![Open solution](media\tensorflow-local\open-solution.png)
+![Open solution](/media/tensorflow-local/open-solution.png)
 
 - Find the MNIST Project in the **Solution Explorer**, right click and select **Set as StartUp Project**.
 
@@ -37,7 +42,7 @@ Download this [GitHub repository](https://github.com/Microsoft/samples-for-ai) c
 
 - The output will be printed in the console.
 
-![Sample output from console](media\tensorflow-local\console-output.png)
+![Sample output from console](/media/tensorflow-local/console-output.png)
 
 > [!div class="nextstepaction"]
-> [Run a TensorFlow model in the cloud](tensorflow-vm.md)
+> [Train a TensorFlow model in the cloud](tensorflow-vm.md)
