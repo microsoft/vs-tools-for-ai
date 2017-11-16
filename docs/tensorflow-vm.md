@@ -15,7 +15,7 @@ Please read instructions for [setting up Deep Learning Virtual Machine](https://
 > [!NOTE] 
 > Set **Location** to US West 2 (or others which have Deep Learning VM) and **OS type** as Linux.
 
-### Update .bashrc file to support remote job submission via non-interactive Bash session
+### Update .bashrc to Enable Remote Job Submission via Non-interactive Bash Session
 Login to your Deep Learning VM using a tool like Putty or similar. Execute below to modify your bashrc file to enable remote deep learning job submission (configures remote behavior to work just like if you logged into the VM).
 
 ```bash
