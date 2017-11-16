@@ -13,6 +13,6 @@ Please save it as ".vsix" and then install locally.**
 
 ![extensions](media/installation/extensions.png)
 
-1. **Search** in upper right-hand corner for "Tools for AI"
-2. Select **Visual Studio Tools for AI**
+1. **Search** in upper right-hand corner for "Visual Studio Tools for AI"
+2. Select **Microsoft Visual Studio Tools for AI**
 3. Click **Download**
