@@ -1,5 +1,5 @@
 # Train a TensorFlow model in the cloud
-In this tutorial, we will train a TensorFlow model using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) in an Azure [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) virtual machine. 
+In this tutorial, we will train a TensorFlow model using the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) in an Azure [Deep Learning Virtual Machine](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview). 
 
 The MNIST database has a training set of 60,000 examples, and a test set of 10,000 examples of handwritten digits.
 
@@ -10,12 +10,12 @@ Before you begin, ensure you have the following installed and configured:
 Download this [GitHub repository](https://github.com/Microsoft/samples-for-ai) containing samples for getting started with deep learning across TensorFlow, CNTK, Theano and more.
 
 ### Setup Azure Deep Learning Virtual Machine
-Please read [instructions for setting up Deep Learning Virtual Machine](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). 
+Please read instructions for [setting up Deep Learning Virtual Machine](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). 
 
 > [!NOTE] 
 > Set **Location** to US West 2 (or others which have Deep Learning VM) and **OS type** as Linux.
 
-### Edit Bash RC to support not running interactively
+### Update .bashrc file to support remote job submission via non-interactive Bash session
 Login to your Deep Learning VM using a tool like Putty or similar. Execute below to modify your bashrc file to enable remote deep learning job submission (configures remote behavior to work just like if you logged into the VM).
 
 ```bash
@@ -26,9 +26,9 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 - Launch Visual Studio and select **File > Open > Project/Solution**.
 
-- Select the **Tensorflow Examples** folder from the samples repository downloaded  
+- Select the **examples\tensorflow** folder from the samples repository downloaded  
 
-![Open project](./media/tensorflow-local/open-project.png)
+![Open project](./media/tensorflow-local/open-folder.png)
 
 - Open the **TensorflowExamples.sln** file.
 
