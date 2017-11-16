@@ -1,21 +1,3 @@
----
-title: "Quickstart: Create a Python project from a template in Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: 09/25/2017
-ms.reviewer: ""
-ms.suite: ""
-ms.technology:
-  - "devlang-python"
-ms.devlang: python
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 3f4b66c5-3ad8-4067-90cd-0100205700a7
-caps.latest.revision: 1
-author: "kraigb"
-ms.author: "kraigb"
-manager: ghogen
----
-
 # Quickstart: train AI models in Azure Batch AI
 
 Batch AI is a managed service that enables data scientists and AI researchers to train AI and other machine learning models on clusters of Azure virtual machines, including VMs with GPU support. You describe the requirements of your job, where to find the inputs and store the outputs, and Batch AI handles the rest. [Learn more about Azure Batch AI](https://docs.microsoft.com/en-us/azure/batch-ai/overview) 
