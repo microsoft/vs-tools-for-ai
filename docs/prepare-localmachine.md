@@ -58,13 +58,13 @@ Then, we need to verify whether Python 3.5 is installed correctly, and upgrade p
 
 - **Windows**
     ```cmd
-    C:\Users\test>python -V
+    C:\>python -V
     Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
+    C:\>pip3.5 -V
     pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
+    C:\>python -m pip install -U pip
     ```
 
 - **macOS**
