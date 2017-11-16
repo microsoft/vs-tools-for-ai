@@ -14,13 +14,13 @@ Run the following command in a terminal.
 
 
 ```cmd
-C:\>pip install tensorflow
+pip install tensorflow
 ```
 
 or if you have an Nvidia GPU
 
 ```cmd
-C:\>pip install tensorflow-gpu
+pip install tensorflow-gpu
 ```
 
 ### NumPy and SciPy 
@@ -36,7 +36,7 @@ Download this [GitHub repository](https://github.com/Microsoft/samples-for-ai) c
 
 - Launch Visual Studio and select **File > Open > Project/Solution**.
 
-- Select the **Tensorflow Examples** folder from the samples repository dowloaded and open the **TensorflowExamples.sln** file. 
+- Select the **examples\tensorflow** subfolder from the samples repository dowloaded and open the **TensorflowExamples.sln** file.
 
 ![Open folder](./media/tensorflow-local/open-folder.png)
 
