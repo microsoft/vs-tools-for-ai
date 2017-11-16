@@ -1,6 +1,6 @@
 # Quickstart: clone a repository of Python code in Visual Studio
 
-Once you've [Visual Studio Tools for AI](installation.md), you can easily clone a repository of Python code and create a project from it.
+Once you've [installed Visual Studio Tools for AI](installation.md), you can easily clone a repository of Python code and create a project from it.
 
 1. To connect to GitHub repositories, run the Visual Studio installer, select **Modify**, and select the **Individual components** tab. Scroll down to the **Code tools** section, select **GitHub extension for Visual Studio**, and select **Modify**.
     
