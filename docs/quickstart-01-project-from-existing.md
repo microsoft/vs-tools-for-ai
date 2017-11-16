@@ -1,8 +1,9 @@
 # Quickstart: Create an AI project from existing code
 
-Once you've [installed Visual Studio Tools for AI](installation.md), it's easy to bring existing Python code into a Visual Studio project. 
+Once you've installed [Visual Studio Tools for AI](installation.md), it's easy to bring existing Python code into a Visual Studio project. 
 
 > [!Important]
+>
 > The process described here does not move or copy the original source files. If you want to work with a copy, duplicate the folder first.
 
 1. Launch Visual Studio and select **File > New > Project**.
