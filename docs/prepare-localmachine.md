@@ -312,5 +312,5 @@ pip3.5 install chainer==3.0.0
     git clone https://github.com/Microsoft/samples-for-ai.git
     cd samples-for-ai
     cd installer
-    python setup.py
+    python install.py
     ```
