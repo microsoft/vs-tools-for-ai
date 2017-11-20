@@ -145,13 +145,14 @@ To install CNTK Python package, see [how to install CNTK](https://docs.microsoft
 
 > [!NOTE]
 >
-> CNTK currently does not support macOS.
+> - CNTK currently does not support macOS.
+> - CNTK GPU-1bit-SGD version is licensed under a specific [1bit-SGD License](https://docs.microsoft.com/en-us/cognitive-toolkit/cntk-1bit-sgd-license) which is MORE restrictive, than the major CNTK License.
 
 Briefly, to install CNTK Python package, run the following command in a terminal:
 - **Windows**
     - With GPU
         ```cmd
-        pip3.5 install https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.2-cp35-cp35m-win_amd64.whl
+        pip3.5 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-win_amd64.whl
         ```
     - Without GPU
         ```cmd
@@ -160,7 +161,7 @@ Briefly, to install CNTK Python package, run the following command in a terminal
 - **Linux**
     - With GPU
         ```bash
-        pip3.5 install https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.2-cp35-cp35m-linux_x86_64.whl
+        pip3.5 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-linux_x86_64.whl
         ```
     - Without GPU
         ```bash
@@ -168,10 +169,7 @@ Briefly, to install CNTK Python package, run the following command in a terminal
         ```
 
 To install CNTK BrainScript package, run the following command in a terminal:
-- Visit [here](https://github.com/Microsoft/CNTK/releases/tag/v2.2) to download the CPU-only or GPU with 1bit-SGD package.
-    > [!NOTE]
-	>
-    > CNTK GPU-1bit-SGD version is licensed under a specific [1bit-SGD License](https://docs.microsoft.com/en-us/cognitive-toolkit/cntk-1bit-sgd-license) which is MORE restrictive, than the major CNTK License.
+- Visit [here](https://github.com/Microsoft/CNTK/releases/tag/v2.2) to download the CPU-only or GPU package.
 
 - **Windows**
     - Decompress the zip file to "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK". Please create this folder if it does not exist.
