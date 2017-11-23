@@ -300,6 +300,7 @@ pip3 install cupy
 > On Windows, you need **2015** version of [Microsoft Visual Studio](https://www.visualstudio.com/)
 or [Microsoft Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
 to compile CuPy with CUDA 8.0.
+First, open a **VS2015 x64 Native Tools Command Prompt** or **Visual C++ 2015 x64 Native Tools Command Prompt**, and then execute the above cupy installation command.
 
 To install Chainer, please run the following command in a terminal:
 ```bash
