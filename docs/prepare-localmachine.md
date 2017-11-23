@@ -1,6 +1,6 @@
 # Preparing your environment
 
-Before training deep learning models on your local or remote computer you should make sure you have the latest applicable prerequisites installed. This includes making sure the latest drivers and libraries for your NVIDIA GPU (if you have one). You should also ensure you have installed Python and Python libraries such as NumPy, SciPy, and appropriate deep learning frameworks such as Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch and/or Chainer.
+Before training deep learning models on your local or remote computer you should make sure you have the latest applicable prerequisites installed. This includes making sure the latest drivers and libraries for your NVIDIA GPU (if you have one). You should also ensure you have installed Python and Python libraries such as NumPy, SciPy, Python support for Visual Studio / Visual Studio Code, and appropriate deep learning frameworks such as Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch and/or Chainer.
 
 > [!NOTE]
 >
@@ -46,22 +46,25 @@ To install cuDNN
 Python has been the primary programming language for deep learning applications.
 **64-bit** Python distribution is required, and the latest [Python 3.5](https://www.python.org/downloads/release/python-354) is recommended for the best compatibility.
 
-### To install Python on Windows
-- We suggest to install the Python launcher for yourself only, and add Python to the %PATH% environment variable.
-- Please ensure to install pip, which is the package management system to install and manage software packages written in Python.
-
+Please add Python directory to the %PATH% or $PATH environment variable.
+And make ensure to install **pip**, which is the package management system to install and manage software packages written in Python.
 Deep learning frameworks rely on pip for their own installation.
+
+> [!NOTE]
+>
+> On Windows, it is better to install the Python launcher for yourself only.
 
 ![install Python on Windows](./media/prepare-local-machine/install_python_win.png)
 
-Then, we need to verify whether Python 3.5 is installed correctly, and upgrade pip to the latest version by executing the following commands in a terminal:
+Then, we verify whether Python is installed correctly, and upgrade pip to the latest version.
+Suppose Python 3.5 is installed, please execute the following commands in a terminal:
 
 - **Windows**
     ```cmd
     C:\>python -V
     Python 3.5.4
 
-    C:\>pip3.5 -V
+    C:\>pip3 -V
     pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
     C:\>python -m pip install -U pip
@@ -69,24 +72,24 @@ Then, we need to verify whether Python 3.5 is installed correctly, and upgrade p
 
 - **macOS**
     ```bash
-    MyMac:~ test$ python3.5 -V
+    MyMac:~ test$ python3 -V
     Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
+    MyMac:~ test$ pip3 -V
     pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
+    MyMac:~ test$ python3 -m pip install -U pip
     ```
 
 - **Linux**
     ```bash
-    test@MyLinux:~$ python3.5 -V
+    test@MyLinux:~$ python3 -V
     Python 3.5.4
 
-    test@MyLinux:~$ pip3.5 -V
+    test@MyLinux:~$ pip3 -V
     pip 9.0.1 from /usr/local/lib/python3.5/dist-packages (python 3.5)
 
-    test@MyLinux:~$ sudo python3.5 -m pip install -U pip
+    test@MyLinux:~$ sudo python3 -m pip install -U pip
     ```
 
 ## Working with Python in Visual Studio on Windows
@@ -111,15 +114,19 @@ When Visual Studio 2015 installation starts, please choose **Custom** type, and 
 
 ### Setting up the default Python environment
 
-Users need to setup the default Python environment in Visual Studio for AI projects if there are multiple ones other than the recommended Python 3.5 installed.
-E.g. Visual Studio 2017's Python development workload installs a 64-bit Python 3.6 automatically.
-Or users install Anaconda and create several virtual Python environments.
+Users need to setup the default Python environment in Visual Studio for AI projects if there are multiple ones.
+E.g. Users install Python 3.5 manually, and Visual Studio 2017 Python development workload installs a 64-bit Python 3.6 automatically.
+Or users create several Anaconda virtual Python environments.
 
 To set the default Python environment globally for Visual Studio, please go to menu ***Tools > Python > Python Environments*** (Visual Studio 2017), or ***Tools > Python Tools > Python Environments*** (Visual Studio 2015).
-Then, select **Python 3.5 (64 bit)** and click ***Make this the default environment for new projects*** button.
+Then, select e.g. **Python 3.5 (64 bit)** and click ***Make this the default environment for new projects*** button.
 
 ![Setting up the default Python environment](./media/prepare-local-machine/install_python_setup_default.png)
 
+## Working with Python in Visual Studio Code
+
+Python is fully supported in Visual Studio Code through extensions.
+Please visit [here](https://code.visualstudio.com/docs/languages/python) for more details.
 
 ## NumPy and SciPy
 
@@ -130,7 +137,7 @@ Starting from version 1.0.0, SciPy now has official prebuilt wheel package for W
 
 To install NumPy and SciPy, run the following command in a terminal:
 ```bash
-pip3.5 install -U numpy scipy
+pip3 install -U numpy scipy
 ```
 
 > [!NOTE]
@@ -152,20 +159,20 @@ Briefly, to install CNTK Python package, run the following command in a terminal
 - **Windows**
     - With GPU
         ```cmd
-        pip3.5 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-win_amd64.whl
+        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-win_amd64.whl
         ```
     - Without GPU
         ```cmd
-        pip3.5 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-win_amd64.whl
+        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-win_amd64.whl
         ```
 - **Linux**
     - With GPU
         ```bash
-        pip3.5 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-linux_x86_64.whl
+        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-linux_x86_64.whl
         ```
     - Without GPU
         ```bash
-        pip3.5 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-linux_x86_64.whl
+        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-linux_x86_64.whl
         ```
 
 To install CNTK BrainScript package, run the following command in a terminal:
@@ -193,11 +200,11 @@ Please refer to [here](https://www.tensorflow.org/install/) for detailed install
 To install TensorFlow, run the following command in a terminal:
 - With GPU
     ```bash
-    pip3.5 install tensorflow-gpu==1.4.0
+    pip3 install tensorflow-gpu==1.4.0
     ```
 - Without GPU
     ```bash
-    pip3.5 install tensorflow==1.4.0
+    pip3 install tensorflow==1.4.0
     ```
 
 ## Caffe2
@@ -219,11 +226,11 @@ It allows you to **mix** [symbolic and imperative programming](http://mxnet.io/a
 To install MXNet, run the following command in a terminal:
 - With GPU
     ```bash
-    pip3.5 install mxnet-cu80==0.12.0
+    pip3 install mxnet-cu80==0.12.0
     ```
 - Without GPU
     ```bash
-    pip3.5 install mxnet==0.12.0
+    pip3 install mxnet==0.12.0
     ```
 
 ## Keras
@@ -232,7 +239,7 @@ To install MXNet, run the following command in a terminal:
 
 To install Keras, please run the following command in a terminal:
 ```bash
-pip3.5 install Keras==2.0.9
+pip3 install Keras==2.0.9
 ```
 
 ## Theano
@@ -241,7 +248,7 @@ pip3.5 install Keras==2.0.9
 
 To install Theano, please run the following command in a terminal:
 ```bash
-pip3.5 install Theano==0.9.0
+pip3 install Theano==0.9.0
 ```
 
 ## PyTorch
@@ -259,7 +266,7 @@ To install PyTorch, please run the following command in a terminal:
 
 - **macOS**
     ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+    pip3 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
     > [!NOTE]
 	>
@@ -267,7 +274,7 @@ To install PyTorch, please run the following command in a terminal:
 
 - **Linux**
     ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
     > [!NOTE]
 	>
@@ -275,7 +282,7 @@ To install PyTorch, please run the following command in a terminal:
 
 Finally, install torchvision on non-Windows:
 ```bash
-pip3.5 install torchvision
+pip3 install torchvision
 ```
 
 ## Chainer
@@ -285,7 +292,7 @@ It provides automatic differentiation APIs based on the **define-by-run approach
 
 To enable CUDA support, install [CuPy](https://github.com/cupy/cupy):
 ```bash
-pip3.5 install cupy
+pip3 install cupy
 ```
 
 > [!NOTE]
@@ -296,7 +303,7 @@ to compile CuPy with CUDA 8.0.
 
 To install Chainer, please run the following command in a terminal:
 ```bash
-pip3.5 install chainer==3.0.0
+pip3 install chainer==3.0.0
 ```
 
 # Using an installer to setup deep learning frameworks
