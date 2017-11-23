@@ -307,16 +307,4 @@ To install Chainer, please run the following command in a terminal:
 pip3 install chainer==3.0.0
 ```
 
-# Using an installer to setup deep learning frameworks
-
-[Here](https://github.com/Microsoft/samples-for-ai/tree/master/installer) has a simple installer for users to setup deep learning frameworks on Windows:
-
-- Refer to the above subsection to install NVIDIA GPU driver, CUDA and cuDNN.
-- Install latest Python **3.5**. Other Python versions are not supported yet.
-- Run the following commands in a terminal:
-    ```bash
-    git clone https://github.com/Microsoft/samples-for-ai.git
-    cd samples-for-ai
-    cd installer
-    python install.py
-    ```
+## Using an one-click installer to setup the above deep learning frameworks(https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
