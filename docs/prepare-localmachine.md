@@ -307,4 +307,4 @@ To install Chainer, please run the following command in a terminal:
 pip3 install chainer==3.0.0
 ```
 
-## Using an one-click installer to setup the above deep learning frameworks(https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
+## [Using an one-click installer to setup the above deep learning frameworks](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
