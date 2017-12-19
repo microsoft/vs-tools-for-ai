@@ -159,24 +159,24 @@ Briefly, to install CNTK Python package, run the following command in a terminal
 - **Windows**
     - With GPU
         ```cmd
-        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-win_amd64.whl
+        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.3.1-cp35-cp35m-win_amd64.whl
         ```
     - Without GPU
         ```cmd
-        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-win_amd64.whl
+        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp35-cp35m-win_amd64.whl
         ```
 - **Linux**
     - With GPU
         ```bash
-        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.2-cp35-cp35m-linux_x86_64.whl
+        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.3.1-cp35-cp35m-linux_x86_64.whl
         ```
     - Without GPU
         ```bash
-        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.2-cp35-cp35m-linux_x86_64.whl
+        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp35-cp35m-linux_x86_64.whl
         ```
 
 To install CNTK BrainScript package, run the following command in a terminal:
-- Visit [here](https://github.com/Microsoft/CNTK/releases/tag/v2.2) to download the CPU-only or GPU package.
+- Visit [here](https://github.com/Microsoft/CNTK/releases/tag/v2.3.1) to download the CPU-only or GPU package.
 
 - **Windows**
     - Decompress the zip file to "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK". Please create this folder if it does not exist.
@@ -226,11 +226,11 @@ It allows you to **mix** [symbolic and imperative programming](http://mxnet.io/a
 To install MXNet, run the following command in a terminal:
 - With GPU
     ```bash
-    pip3 install mxnet-cu80==0.12.0
+    pip3 install mxnet-cu80==1.0.0
     ```
 - Without GPU
     ```bash
-    pip3 install mxnet==0.12.0
+    pip3 install mxnet==1.0.0
     ```
 
 ## Keras
@@ -239,7 +239,7 @@ To install MXNet, run the following command in a terminal:
 
 To install Keras, please run the following command in a terminal:
 ```bash
-pip3 install Keras==2.0.9
+pip3 install Keras==2.1.2
 ```
 
 ## Theano
@@ -248,7 +248,7 @@ pip3 install Keras==2.0.9
 
 To install Theano, please run the following command in a terminal:
 ```bash
-pip3 install Theano==0.9.0
+pip3 install Theano==1.0.1
 ```
 
 ## PyTorch
@@ -260,21 +260,28 @@ pip3 install Theano==0.9.0
 To install PyTorch, please run the following command in a terminal:
 
 - **Windows**
-    - There is no official wheel package yet. You may download a third-party [Anaconda PyTorch package](https://anaconda.org/peterjc123/pytorch/0.2.1/download/win-64/pytorch-0.2.1-py35h24644ff_0.2.1cu80.tar.bz2).
-    - Decompress it to your home directory, e.g. "C:\Users\test\pytorch".
+    - There is no official wheel package yet. You could download a third-party Anaconda PyTorch package from [here](https://anaconda.org/peterjc123/pytorch/files). Please choose an appropriate file.
+    - Decompress it to, e.g. your home directory, "C:\Users\test\pytorch".
     - Add "C:\Users\test\pytorch\Lib\site-packages" to the %PYTHONPATH% environment variable.
+    - Or, copy the contents in "C:\Users\test\pytorch\Lib\site-packages" to your Python distribution's "Lib\site-packages" subdirectory.
 
 - **macOS**
     ```bash
-    pip3 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+    - Python 3.5
+        pip3 install http://download.pytorch.org/whl/torch-0.3.0.post4-cp35-cp35m-macosx_10_6_x86_64.whl
+    - Python 3.6
+        pip3 install http://download.pytorch.org/whl/torch-0.3.0.post4-cp36-cp36m-macosx_10_7_x86_64.whl
     ```
     > [!NOTE]
 	>
-    > macOS binaries dont support CUDA, install from source if CUDA is needed
+    > macOS binaries don't support CUDA, install from source if CUDA is needed
 
 - **Linux**
     ```bash
-    pip3 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+    - Python 3.5
+        pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl
+    - Python 3.6
+        pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp36-cp36m-linux_x86_64.whl
     ```
     > [!NOTE]
 	>
@@ -292,7 +299,7 @@ It provides automatic differentiation APIs based on the **define-by-run approach
 
 To enable CUDA support, install [CuPy](https://github.com/cupy/cupy):
 ```bash
-pip3 install cupy
+pip3 install cupy==2.2.0
 ```
 
 > [!NOTE]
@@ -304,7 +311,13 @@ First, open a **VS2015 x64 Native Tools Command Prompt** or **Visual C++ 2015 x6
 
 To install Chainer, please run the following command in a terminal:
 ```bash
-pip3 install chainer==3.0.0
+pip3 install chainer==3.2.0
 ```
 
-## [Using an one-click installer to setup the above deep learning frameworks](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
+To enable multi-node distributed deep learning, please install
+[ChainerMN]{https://github.com/chainer/chainermn} in a terminal:
+```bash
+pip3 install chainermn
+```
+
+## [Using a one-click installer to setup deep learning frameworks](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
