@@ -129,7 +129,10 @@ Then, select e.g. **Python 3.5 (64 bit)** and click ***Make this the default env
 Python is fully supported in Visual Studio Code through extensions.
 Please visit [here](https://code.visualstudio.com/docs/languages/python) for more details.
 
-## NumPy and SciPy
+
+## Essential packages
+
+### NumPy and SciPy
 
 - **NumPy** is a general-purpose array-processing package designed to efficiently manipulate large multi-dimensional arrays of arbitrary records without sacrificing too much speed for small multi-dimensional arrays.
 
@@ -145,7 +148,37 @@ pip3 install -U numpy scipy
 >
 > The above command will upgrade existing old or unofficial (e.g. third party packages from http://www.lfd.uci.edu/~gohlke/pythonlibs/ for Windows) NumPy and SciPy to the latest official ones.
 
-## Microsoft Cognitive Toolkit (CNTK)
+### Jupyter Notebook
+
+[Jupyter Notebook](http://jupyter.org/) is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
+
+To install Jupyter Notebook, run the following command in a terminal:
+```bash
+pip3 install jupyter nbconvert
+```
+
+### Pandas
+
+[Pandas](https://pandas.pydata.org/) is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
+
+To install Pandas, run the following command in a terminal:
+```bash
+pip3 install pandas
+```
+
+### Matplotlib
+
+[Matplotlib](https://matplotlib.org/) is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
+
+To install Matplotlib, run the following command in a terminal:
+```bash
+pip3 install matplotlib
+```
+
+
+## Deep learning and machine learning frameworks
+
+### Microsoft Cognitive Toolkit (CNTK)
 
 The [Microsoft Cognitive Toolkit](https://cntk.ai) is a unified deep-learning toolkit that describes neural networks as a series of computational steps via a directed graph. CNTK supports both Python and BrainScript programming languages.
 
@@ -193,7 +226,7 @@ To install CNTK BrainScript package, run the following command in a terminal:
         sudo apt-get install libopenmpi-dev
         ```
 
-## TensorFlow
+### TensorFlow
 
 [TensorFlow](https://www.tensorflow.org/) is an open source software library for numerical computation using data flow graphs.
 Please refer to [here](https://www.tensorflow.org/install/) for detailed installation.
@@ -208,51 +241,7 @@ To install TensorFlow, run the following command in a terminal:
     pip3 install tensorflow==1.4.0
     ```
 
-## Caffe2
-
-[Caffe2](https://caffe2.ai/) is a lightweight, modular, and scalable deep learning framework.
-Building on the original Caffe, Caffe2 is designed with expression, speed, and modularity in mind.
-
-Currently, there's no official prebuilt Caffe2 python wheel package available.
-Please visit [here](https://caffe2.ai/docs/getting-started.html) to build from source code.
-
-> [!NOTE]
-> [here](https://github.com/Microsoft/samples-for-ai/tree/master/installer) has a third-party Caffe2 0.8.1 Windows wheel package (supports both GPU and CPU).
-
-## MXNet
-
-[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) is a deep learning framework designed for both efficiency and flexibility.
-It allows you to **mix** [symbolic and imperative programming](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) to maximize efficiency and productivity.
-
-To install MXNet, run the following command in a terminal:
-- With GPU
-    ```bash
-    pip3 install mxnet-cu80==1.0.0
-    ```
-- Without GPU
-    ```bash
-    pip3 install mxnet==1.0.0
-    ```
-
-## Keras
-
-[Keras](https://keras.io/) is a high-level neural networks API, written in Python and capable of running on top of CNTK, TensorFlow or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
-
-To install Keras, please run the following command in a terminal:
-```bash
-pip3 install Keras==2.1.2
-```
-
-## Theano
-
-[Theano](http://deeplearning.net/software/theano/) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
-
-To install Theano, please run the following command in a terminal:
-```bash
-pip3 install Theano==1.0.1
-```
-
-## PyTorch
+### PyTorch
 
 [PyTorch](http://pytorch.org/) is a python package that provides two high-level features:
 - Tensor computation (like numpy) with strong GPU acceleration
@@ -293,7 +282,51 @@ Finally, install torchvision on non-Windows:
 pip3 install torchvision
 ```
 
-## Chainer
+### Caffe2
+
+[Caffe2](https://caffe2.ai/) is a lightweight, modular, and scalable deep learning framework.
+Building on the original Caffe, Caffe2 is designed with expression, speed, and modularity in mind.
+
+Currently, there's no official prebuilt Caffe2 python wheel package available.
+Please visit [here](https://caffe2.ai/docs/getting-started.html) to build from source code.
+
+> [!NOTE]
+> [here](https://github.com/Microsoft/samples-for-ai/tree/master/installer) has a third-party Caffe2 0.8.1 Windows wheel package (supports both GPU and CPU).
+
+### MXNet
+
+[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) is a deep learning framework designed for both efficiency and flexibility.
+It allows you to **mix** [symbolic and imperative programming](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) to maximize efficiency and productivity.
+
+To install MXNet, run the following command in a terminal:
+- With GPU
+    ```bash
+    pip3 install mxnet-cu80==1.0.0
+    ```
+- Without GPU
+    ```bash
+    pip3 install mxnet==1.0.0
+    ```
+
+### Keras
+
+[Keras](https://keras.io/) is a high-level neural networks API, written in Python and capable of running on top of CNTK, TensorFlow or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
+
+To install Keras, please run the following command in a terminal:
+```bash
+pip3 install Keras==2.1.2
+```
+
+### Theano
+
+[Theano](http://deeplearning.net/software/theano/) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
+
+To install Theano, please run the following command in a terminal:
+```bash
+pip3 install Theano==1.0.1
+```
+
+### Chainer
 
 [Chainer](https://chainer.org/) is a Python-based deep learning framework aiming at flexibility.
 It provides automatic differentiation APIs based on the **define-by-run approach** (a.k.a. dynamic computational graphs) as well as object-oriented high-level APIs to build and train neural networks.
@@ -320,5 +353,15 @@ To enable multi-node distributed deep learning, please install
 ```bash
 pip3 install chainermn
 ```
+
+### scikit-learn
+
+[scikit-learn](scikit-learn.org) is a Python module for machine learning built on top of SciPy and distributed under the 3-Clause BSD license.
+
+To install scikit-learn, please run the following command in a terminal:
+```bash
+pip3 install scikit-learn
+```
+
 
 ## [Using a one-click installer to setup deep learning frameworks](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
