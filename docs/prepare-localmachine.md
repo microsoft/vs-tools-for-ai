@@ -44,15 +44,16 @@ To install cuDNN
 ## Python
 
 Python has been the primary programming language for deep learning applications.
-**64-bit** Python distribution is required, and the latest [Python 3.5](https://www.python.org/downloads/release/python-354) is recommended for the best compatibility.
+**64-bit** Python distribution is required, and the latest [Python 3.5](https://www.python.org/downloads/release/python-354/) is recommended for the best compatibility.
 
 Please add Python directory to the %PATH% or $PATH environment variable.
-And make ensure to install **pip**, which is the package management system to install and manage software packages written in Python.
+You also need to install **pip**, which is the package management system to install and manage software packages written in Python.
 Deep learning frameworks rely on pip for their own installation.
 
 > [!NOTE]
 >
-> On Windows, it is better to install the Python launcher for yourself only.
+> 1. On Windows, it is preferred to install the Python launcher for yourself only.
+> 2. Administrative permission may be required to install Python packages via pip, depending on the target installation directory. E.g. "/usr/local/lib/python3.x/dist-packages".
 
 ![install Python on Windows](./media/prepare-local-machine/install_python_win.png)
 
@@ -65,7 +66,7 @@ Suppose Python 3.5 is installed, please execute the following commands in a term
     Python 3.5.4
 
     C:\>pip3 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+    pip 9.0.3 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
     C:\>python -m pip install -U pip
     ```
@@ -76,7 +77,7 @@ Suppose Python 3.5 is installed, please execute the following commands in a term
     Python 3.5.4
 
     MyMac:~ test$ pip3 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+    pip 9.0.3 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
     MyMac:~ test$ python3 -m pip install -U pip
     ```
@@ -87,7 +88,7 @@ Suppose Python 3.5 is installed, please execute the following commands in a term
     Python 3.5.4
 
     test@MyLinux:~$ pip3 -V
-    pip 9.0.1 from /usr/local/lib/python3.5/dist-packages (python 3.5)
+    pip 9.0.3 from /usr/local/lib/python3.5/dist-packages (python 3.5)
 
     test@MyLinux:~$ sudo python3 -m pip install -U pip
     ```
