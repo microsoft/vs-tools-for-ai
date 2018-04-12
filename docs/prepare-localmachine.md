@@ -53,7 +53,7 @@ Deep learning frameworks rely on pip for their own installation.
 > [!NOTE]
 >
 > 1. On Windows, it is preferred to install the Python launcher for yourself only.
-> 2. Administrative permission may be required to install Python packages via pip, depending on the target installation directory. E.g. "/usr/local/lib/python3.x/dist-packages".
+> 2. If your Python distribution is installed in the system directory (e.g. the one shipped with Visual Studio 2017), administrative permission is required to install Python packages with pip.
 
 ![install Python on Windows](./media/prepare-local-machine/install_python_win.png)
 
@@ -316,7 +316,7 @@ pip3 install chainer==3.2.0
 ```
 
 To enable multi-node distributed deep learning, please install
-[ChainerMN]{https://github.com/chainer/chainermn} in a terminal:
+[ChainerMN](https://github.com/chainer/chainermn) in a terminal:
 ```bash
 pip3 install chainermn
 ```
