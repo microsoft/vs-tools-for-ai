@@ -78,7 +78,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct]. For more i
 The [Microsoft Enterprise and Developer Privacy Statement] describes the privacy statement of this software.
 
 ## License
-This extension is [licensed under the MIT License] and subject to the terms of the [End User License Agreement](/docs/license.txt)
+This extension is subject to the terms of the [End User License Agreement](https://www.visualstudio.com/license-terms/mlt552233/)
 
 [Microsoft Enterprise and Developer Privacy Statement]:https://go.microsoft.com/fwlink/?LinkId=786907&lang=en7
 [licensed under the MIT License]: /LICENSE
