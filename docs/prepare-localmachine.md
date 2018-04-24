@@ -485,10 +485,9 @@ This will inevitably result in that models produced by one framework cannot be r
 Model file conversion is a feasible trial towards resolving this challenge.
 In the above subsections, we introduce several model converters: coremltools, onnxmltools, winmltools and tf2onnx, as well as their installation method.
 
-For Windows users, we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
-) to setup these converters.
-If you wish to install them by yourself, please run the following command in a terminal:
+For Windows users, we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to setup these converters.
+If you wish to install them by yourself, first go to the third-party web site to install unofficial [XGBoost](https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost) and [LIBSVM](https://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm) 64-bit Windows packages,
+and then run the following command in a terminal:
 ```bash
 pip3 install tensorflow==1.5.0 scikit-learn onnx "git+https://github.com/apple/coremltools@v0.8" onnxmltools winmltools "git+https://github.com/onnx/tensorflow-onnx.git@r0.1"
 ```
-Then, please go to the third-party web site to install unofficial [XGBoost](https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost) and [LIBSVM](https://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm) 64-bit Windows packages.
