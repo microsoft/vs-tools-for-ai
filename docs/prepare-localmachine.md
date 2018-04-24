@@ -136,7 +136,7 @@ Please visit [here](https://code.visualstudio.com/docs/languages/python) for mor
 ## One-click installer
 
 Setting up deep learning and machine learning software as well as their dependencies is not an easy task.
-We recommend that you use the [one-click installer]((https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
+We recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
 ) to install all of them automatically across Windows, macOS and Linux.
 
 
@@ -413,7 +413,7 @@ Caffe2, PyTorch, Microsoft Cognitive Toolkit, Apache MXNet and other tools are d
 
 To install ONNX, please run the following command in a terminal:
 ```bash
-pip3 install onnx==1.1.1
+pip3 install onnx
 ```
 
 ### Core ML Community Tools (coremltools)
@@ -426,7 +426,7 @@ To install coremltools, please run the following command in a terminal:
     > [!NOTE]
     > There is no official prebuilt wheel package for Windows yet. The following method installs Python stuff only.
     ```bash
-    pip3 install git+https://github.com/apple/coremltools@v0.8
+    pip3 install "git+https://github.com/apple/coremltools@v0.8"
     ```
 - **Non-Windows**
     ```bash
@@ -454,6 +454,17 @@ To install winmltools, please run the following command in a terminal:
 pip3 install winmltools
 ```
 
+### tf2onnx
+
+[tf2onnx](https://github.com/onnx/tensorflow-onnx) converts a TensorFlow graph to an ONNX graph.
+tf2onnx is in its early development. Mileage will vary since TensorFlow supports ~4 times the operations that the current ONNX version supports. But standard models seem to be using mostly ops that ONNX does support.
+
+To install tf2onnx, please run the following command in a terminal:
+```bash
+pip3 install "git+https://github.com/onnx/tensorflow-onnx.git@r0.1"
+```
+
+
 ### Netron
 
 [Netron](https://github.com/lutzroeder/Netron) is a viewer for neural network, deep learning and machine learning models.
@@ -462,3 +473,22 @@ Netron supports ONNX (.onnx, .pb), Keras (.h5, .keras), CoreML (.mlmodel) and Te
 Netron has experimental support for Caffe (.caffemodel), Caffe2 (predict_net.pb), MXNet (-symbol.json), TensorFlow.js (model.json, .pb) and TensorFlow (.pb, .meta).
 
 To install Netron, please visit its [release page](https://github.com/lutzroeder/Netron/releases) and download a suitable installer.
+
+
+## Inter-operation between ML/DL frameworks via model file conversion
+
+In recent years, machine learning and deep learning become very popular in IT industry.
+There have been plenty of frameworks for users to build their own models.
+However, they differ with each other greatly on the implementation details.
+This will inevitably result in that models produced by one framework cannot be reused for subsequent training or inference in another framework, which brings inconvenience and increases cost to users on framework choice.
+
+Model file conversion is a feasible trial towards resolving this challenge.
+In the above subsections, we introduce several model converters: coremltools, onnxmltools, winmltools and tf2onnx, as well as their installation method.
+
+For Windows users, we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
+) to setup these converters.
+If you wish to install them by yourself, please run the following command in a terminal:
+```bash
+pip3 install tensorflow==1.5.0 scikit-learn onnx "git+https://github.com/apple/coremltools@v0.8" onnxmltools winmltools "git+https://github.com/onnx/tensorflow-onnx.git@r0.1"
+```
+Then, please go to the third-party web site to install unofficial [XGBoost](https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost) and [LIBSVM](https://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm) 64-bit Windows packages.
