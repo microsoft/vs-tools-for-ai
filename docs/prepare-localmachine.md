@@ -255,14 +255,24 @@ To install TensorFlow, run the following command in a terminal:
 To install PyTorch, please run the following command in a terminal:
 
 - **Windows**
-    - There is no official wheel package yet. You could download a third-party Anaconda PyTorch package from [here](https://anaconda.org/peterjc123/pytorch/files). Please choose an appropriate file.
-    - Decompress it to, e.g. your home directory, "C:\Users\test\pytorch".
-    - Add "C:\Users\test\pytorch\Lib\site-packages" to the %PYTHONPATH% environment variable.
-    - Or, copy the contents in "C:\Users\test\pytorch\Lib\site-packages" to your Python distribution's "Lib\site-packages" subdirectory.
+    - With GPU
+        ```bash
+        - Python 3.5
+            pip3 install http://download.pytorch.org/whl/cu90/torch-0.4.0-cp35-cp35m-win_amd64.whl
+        - Python 3.6
+            pip3 install http://download.pytorch.org/whl/cu90/torch-0.4.0-cp36-cp36m-win_amd64.whl
+        ```
+    - Without GPU
+        ```bash
+        - Python 3.5
+            pip3 install http://download.pytorch.org/whl/cpu/torch-0.4.0-cp35-cp35m-win_amd64.whl
+        - Python 3.6
+            pip3 install http://download.pytorch.org/whl/cpu/torch-0.4.0-cp36-cp36m-win_amd64.whl
+        ```
 
 - **macOS**
     ```bash
-    pip3 install torch==0.3.1
+    pip3 install torch==0.4.0
     ```
     > [!NOTE]
 	>
@@ -272,19 +282,19 @@ To install PyTorch, please run the following command in a terminal:
     - With GPU
         ```bash
         - Python 3.5
-            pip3 install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp35-cp35m-linux_x86_64.whl
+            pip3 install http://download.pytorch.org/whl/cu90/torch-0.4.0-cp35-cp35m-linux_x86_64.whl
         - Python 3.6
-            pip3 install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp36-cp36m-linux_x86_64.whl
+            pip3 install http://download.pytorch.org/whl/cu90/torch-0.4.0-cp36-cp36m-linux_x86_64.whl
         ```
     - Without GPU
         ```bash
         - Python 3.5
-            pip3 install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp35-cp35m-linux_x86_64.whl
+            pip3 install http://download.pytorch.org/whl/cpu/torch-0.4.0-cp35-cp35m-linux_x86_64.whl
         - Python 3.6
-            pip3 install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp36-cp36m-linux_x86_64.whl
+            pip3 install http://download.pytorch.org/whl/cpu/torch-0.4.0-cp36-cp36m-linux_x86_64.whl
         ```
 
-Finally, install torchvision on **non-Windows**:
+Finally, install torchvision:
 ```bash
 pip3 install torchvision
 ```
