@@ -26,7 +26,7 @@ It's integrated with Visual Studio Tools for AI so you can dynamically scale out
 	
 	![Sample gallery](./media/open-solution.png)
 
-5. Open **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** in the directory you cloned the repository 
+5. Open **samples-for-ai\examples\tensorflow\TensorFlowExamples.sln** in the directory you cloned the repository 
 
 	![Sample gallery](./media/tensorflowexamples.png)
 
