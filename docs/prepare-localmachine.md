@@ -151,7 +151,7 @@ Starting from version 1.0.0, SciPy now has official prebuilt wheel package for W
 
 To install NumPy and SciPy, run the following command in a terminal:
 ```bash
-pip3 install --upgrade --upgrade-strategy only-if-needed numpy scipy
+pip3 install numpy==1.14.2 scipy==1.0.1
 ```
 
 > [!NOTE]
@@ -377,7 +377,7 @@ pip3 install chainermn
 
 To install scikit-learn, please run the following command in a terminal:
 ```bash
-pip3 install scikit-learn
+pip3 install scikit-learn==0.19.1
 ```
 
 ### XGBoost
