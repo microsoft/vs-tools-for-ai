@@ -26,6 +26,10 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 - [Manage Storage](/docs/manage-storage.md)
 - [Monitor GPU Utilization](/docs/gpu-utilization.md)
 - [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
+- [Infuse Apps, Websites and Bots with Microsoft Cognitive Services](/docs/cognitive-services.md)
+- [Build Intelligent Apps with Pre-trained AI Models](/docs/model-inference.md)
+- [Convert AI Models Between Frameworks](/docs/model-converter.md)
+- [View Network Architecture and Parameters of AI Models](/docs/model-viewer.md)
 
 # Supported Operating Systems
 Currently this extension supports 64-bit Windows operating systems.
