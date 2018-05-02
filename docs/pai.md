@@ -23,6 +23,11 @@ In the submission window:
 
 Task Roles:
 1.  The "name" is the name for the task role, need to be unique with other roles.
+1.  The "TaskNumber" is the number of tasks for the task role, no less than 1.
+1.  The "CpuNumber" is CPU number for one task in the task role, no less than 1.
+1.  The "MemoryMB" is memory(MB) for one task in the task role, no less than 100.
+1.  The "GpuNumber" is GPU number for one task in the task role, no less than 0.
+1.  The "Command" is the executable command for tasks in the task role, can not be empty.
 
     ![Config PAI task roles](./media/pai/task-role.png)
 
