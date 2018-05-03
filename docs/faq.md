@@ -62,6 +62,9 @@ Please right-click **AI Tools > Azure Cognitive Services** node on the Server Ex
 The [TextAnalytics SDK](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language/1.0.0-preview) only allows regions from **westus**, **westeurope**, **southeastasia**, **eastus2**, **westcentralus**.
 Please relocate (move or create new) your service in these provider locations. 
 
+### **Q: Text Analytics application fails to display Chinese characters in the Console.**
+You need to change PC language to **Chinese** from **Control Panel > Clock, Language, and Region > Language**.
+
 ### **Q: Custom Vision Python application cannot run due to `No module named 'azure.cognitiveservices'`.** 
 Please install the Custom Vision Python SDK by running the following command in a terminal:
 
