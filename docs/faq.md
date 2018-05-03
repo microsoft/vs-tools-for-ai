@@ -48,3 +48,27 @@ Please go to menu ***Tools &gt; Python &gt; Python Environments*** (Visual Studi
 
 ### **Q: IntelliSense does not work for CNTK BrainScript code.**
 At present, Visual Studio Tools for AI does not support IntelliSense for CNTK BrainScript language.
+
+## Cognitive Services related
+
+### **Q: It reports an invalid status code `Unauthorized` when retrieving subscription keys or creating applications?**
+Please refresh by right clicking the **Server Explorer > AI Tools > Azure Cognitive Services** and selecting **Refresh**.
+
+### **Q: During listing cognitive services, it reports "Resource group <XXX> fails to retrieve cognitive services due to One or more errors occurred."**  
+Please refresh by right clicking the **Server Explorer > AI Tools > Azure Cognitive Services** and selecting **Refresh**.
+
+### **Q: Text Analytics application reports region / location related error**
+The [TextAnalytics SDK](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language/1.0.0-preview) doesn't allow regions other than 'westus', 'westeurope', 'southeastasia', 'eastus2', 'westcentralus'. Please try to locate (move or create new) service in above provider locations. 
+
+### **Q: Custom vision python project fails to import packages** 
+Please install the SDK by
+
+`python -m pip install azure-cognitiveservices-vision-customvision`
+
+### **Q: The custom vision python project return an invalid status code `Bad Request`**
+
+Generally speaking, it is probably caused by the custom vision account permission issue. Please try below operations
+
+- If you encounter this message when creating new projects, make sure that your have the permission to create new projects (the max number of projects in one service / resource group is limited and different according to the pricing tier).
+
+- Try using another subscription key, or regenerate the subscription key and then use the new generated keys. 
