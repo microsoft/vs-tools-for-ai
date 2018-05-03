@@ -53,7 +53,7 @@ Deep learning frameworks rely on pip for their own installation.
 ![install Python on Windows](./media/prepare-local-machine/install_python_win.png)
 
 Then, we verify whether Python is installed correctly, and upgrade pip to the latest version.
-Suppose Python 3.5 is installed, please execute the following commands in a terminal:
+Suppose Python 3.5 is installed, please run the following commands in a terminal:
 
 - **Windows**
     ```cmd

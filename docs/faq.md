@@ -14,16 +14,16 @@ Visual Studio Tools for AI is hosted on Visual Studio Marketplace in two [VS 201
 Please download the correct package for your Visual Studio.
 
 An easier way to install is from within Visual Studio:
-- Click menu "Tools" > "Extensions and Updates".
-- Search in upper right-hand corner for "Visual Studio Tools for AI".
-- Select "Microsoft Visual Studio Tools for AI" extension.
-- Click "Download" button.
+- Choose **Tools > Extensions and Updates** on the menu bar, or type **Extensions** in the **Quick Launch** window.
+- Search in upper right-hand corner for **Visual Studio Tools for AI**.
+- Select **Microsoft Visual Studio Tools for AI** extension.
+- Click **Download** button.
 
 
 ## Prepare development environment
 
 ### **Q: Python may not be installed on Windows Server OS.**
-After downloading the Python installer to a local directory, right-click it and select ***Run as administrator***.
+After having downloaded the Python installer to a local directory, right-click it and select **Run as administrator**.
 We recommend that you install Python to %LocalAppData%.
 
 ![Install Python in administrator mode](/docs/media/faq/prepare-localmachine/install_python_admin.png)
@@ -34,41 +34,46 @@ We recommend that you install Python to %LocalAppData%.
 If multiple Python environments exist, Visual Studio may choose a wrong environment as default, or the project is manually set to an incorrect one.
 Please refer to [Setting up the default Python environment](https://github.com/Microsoft/vs-tools-for-ai/blob/master/docs/prepare-localmachine.md#setting-up-the-default-python-environment) and change the global or per-project Python environment.
 
-### **Q: CNTK BrainScript Deep Learning projects or examples cannot run.**
-Please go to option page ***AI Tools &gt; Options &gt; Options &gt; AI Tools &gt; CNTK***, and check whether "CNTK RuntimeSDK Directory" is set correctly.
+### **Q: CNTK BrainScript projects or examples cannot run.**
+Please go to option page **AI Tools > Options > AI Tools > CNTK**, and check whether **CNTK directory** is set correctly.
 That is, cntk.exe should be found under "${CNTK RuntimeSDK Directory}\\cntk".
 
 Please refer to [here](https://github.com/Microsoft/vs-tools-for-ai/blob/master/docs/prepare-localmachine.md#microsoft-cognitive-toolkit-cntk) on how to install CNTK BrainScript package.
 
 ### **Q: IntelliSense does not work for CNTK, TensorFlow, and etc. Python code.**
 After having installed these frameworks, it needs some time for Visual Studio to refresh the Python completion DB.
-Please go to menu ***Tools &gt; Python &gt; Python Environments*** (Visual Studio 2017), or ***Tools &gt; Python Tools &gt; Python Environments*** (Visual Studio 2015). Then, click the refreshing button.
+Please first choose **Tools > Python > Python Environments** (Visual Studio 2017), or **Tools > Python Tools > Python Environments** (Visual Studio 2015) on the menu bar.
+Then, click the refreshing button.
 
 ![Refresh Python completion DB](/docs/media/faq/local-development/refresh_python_db.png)
 
 ### **Q: IntelliSense does not work for CNTK BrainScript code.**
 At present, Visual Studio Tools for AI does not support IntelliSense for CNTK BrainScript language.
 
-## Cognitive Services related
+## Microsoft Cognitive Services
 
-### **Q: It reports an invalid status code `Unauthorized` when retrieving subscription keys or creating applications?**
-Please refresh by right clicking the **Server Explorer > AI Tools > Azure Cognitive Services** and selecting **Refresh**.
+### **Q: I cannot retrieve subscription keys or create applications due to `Unauthorized` status code.**
+Please right-click **AI Tools > Azure Cognitive Services** node on the Server Explorer panel, and select **Refresh**.
 
-### **Q: During listing cognitive services, it reports "Resource group <XXX> fails to retrieve cognitive services due to One or more errors occurred."**  
-Please refresh by right clicking the **Server Explorer > AI Tools > Azure Cognitive Services** and selecting **Refresh**.
+### **Q: Resource group <XXX> fails to retrieve cognitive services due to one or more errors occurred.**  
+Please right-click **AI Tools > Azure Cognitive Services** node on the Server Explorer panel, and select **Refresh**.
 
-### **Q: Text Analytics application reports region / location related error**
-The [TextAnalytics SDK](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language/1.0.0-preview) doesn't allow regions other than 'westus', 'westeurope', 'southeastasia', 'eastus2', 'westcentralus'. Please try to locate (move or create new) service in above provider locations. 
+### **Q: Text Analytics application reports region / location error.**
+The [TextAnalytics SDK](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language/1.0.0-preview) only allows regions from **westus**, **westeurope**, **southeastasia**, **eastus2**, **westcentralus**.
+Please relocate (move or create new) your service in these provider locations. 
 
-### **Q: Custom vision python project fails to import packages** 
-Please install the SDK by
+### **Q: Custom Vision Python application cannot run due to `No module named 'azure.cognitiveservices'`.** 
+Please install the Custom Vision Python SDK by running the following command in a terminal:
 
-`python -m pip install azure-cognitiveservices-vision-customvision`
+```bash
+python -m pip install azure-cognitiveservices-vision-customvision
+```
 
-### **Q: The custom vision python project return an invalid status code `Bad Request`**
+### **Q: Custom Vision Python application returns `Bad Request` status code.**
+It is probably caused by permission issues of your Custom Vision account.
+Please try the following steps:
 
-Generally speaking, it is probably caused by the custom vision account permission issue. Please try below operations
+-   Make sure that you don't exceed the quota to create new Custom Vision projects (not the Visual Studio projects).
+    The maximum allowed in a service / resource group differs between pricing tiers.
 
-- If you encounter this message when creating new projects, make sure that your have the permission to create new projects (the max number of projects in one service / resource group is limited and different according to the pricing tier).
-
-- Try using another subscription key, or regenerate the subscription key and then use the new generated keys. 
+-   Try another subscription key, or regenerate a new one. 
