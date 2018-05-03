@@ -53,6 +53,19 @@ In the submission window:
 
 - Click **Submit**. 
 
+![Job submission to Docker container](./media/tensorflow-vm/job-submission-docker.png)
+
+User can also submit jobs to run in a Docker container:
+
+- Check 'Run In Docker' checkbox
+
+- User can select the command to run Docker container: "Docker" or ["NvidiaDocker"](https://github.com/NVIDIA/nvidia-docker)
+
+- User can select the Docker image in "Docker image" combobox, or input his own docker image built in Docker Hub. The default docker registry is [Docker Hub](https://hub.docker.com/)
+
+- User can choose the identity to run Docker container in remote machine. The default user is "root".
+
+
 ## Check status of job 
 To see status and details of jobs: expand the virtual machine you submitted the job to in the **Server Explorer**. Double click on **Jobs**.
 
