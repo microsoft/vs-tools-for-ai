@@ -5,15 +5,15 @@ Building intelligent applications in Visual Studio is as easy as adding your pre
 The library allows users to automatically optimize their models for model serving, improving the model size for use in inferencing applications. Moreover, VS Tools for AI generates a C# stub class to simplify interaction with models in your app. These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
 
 VS Tools for AI supports building apps using Tensorflow and ONNX models. Currently, the following versions are supported:
-+ ONNX
-    + Version: 1.0.1
-    + CPU (MKL enabled) only
-+ TensorFlow
-    + Version: 1.5.0
-    + CPU (MKL enabled) only
-    + Model formats: checkpoint and saved model only. Frozen model is not supported.
-        + For TensorFlow Checkpoint - all files including a checkpoint file, a meta file, and data files should be stored under the same folder. If your model contains TensorFlow lookup operations, please copy your vocabulary file to this folder as well.
-        + For TensorFlow SavedModel - all files including a pb file, data files and asset files should be stored under the same folder. Please do not import SavedModel files that were previously optimized by the library -this can result in unexpected errors.
+-   ONNX
+    -   Version: 1.0.1
+    -   CPU (MKL enabled) only
+-   TensorFlow
+    -   Version: 1.5.0
+    -   CPU (MKL enabled) only
+    -   Model formats: checkpoint and saved model only. Frozen model is not supported.
+        -   For TensorFlow Checkpoint - all files including a checkpoint file, a meta file, and data files should be stored under the same folder. If your model contains TensorFlow lookup operations, please copy your vocabulary file to this folder as well.
+        -   For TensorFlow SavedModel - all files including a pb file, data files and asset files should be stored under the same folder. Please do not import SavedModel files that were previously optimized by the library -this can result in unexpected errors.
 
 ## How to Create a Model Inference Library Project
 
