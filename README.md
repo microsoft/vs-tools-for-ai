@@ -6,6 +6,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 ## Quick Links
 **Getting Started**
 
+- [Release Notes](/docs/release-notes.md)
 - [Installation](/docs/installation.md)
 - [Prepare development environment](/docs/prepare-localmachine.md)
 - [Deep learning sample recipes](https://github.com/Microsoft/samples-for-ai)
@@ -31,6 +32,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 - [Build Intelligent Apps with Pre-trained AI Models](/docs/model-inference.md)
 - [Convert AI Models Between Frameworks](/docs/model-converter.md)
 - [View Network Architecture and Parameters of AI Models](/docs/model-viewer.md)
+
 
 # Supported Operating Systems
 Currently this extension supports 64-bit Windows operating systems.
