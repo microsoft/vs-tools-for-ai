@@ -1,6 +1,12 @@
 # Release Notes
 
-## 0.4.0.618667 (2018-05-06)
+## 0.4.0.620119 (2018-05-06)
+We add many cool features in this release, which requires [newer version of Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio) and [upgrading CUDA / AI frameworks](/docs/prepare-localmachine.md).
+
+Since setting up deep learning and machine learning software as well as their dependencies is not an easy task,
+we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to install them automatically.
+
+
 -   Infuse AI models into apps with Microsoft Machine Learning Scoring
     -   Once training is complete, building intelligent applications in Visual Studio is as easy as putting your trained model in your app just like any other library or resource.
     -   VS Tools for AI makes this easy by enabling you to create a Model Inference Library project which automatically optimizes your ONNX/TensorFlow model for serving, as well as placing on optimized ONNX/TensorFlow runtime in the project.
@@ -16,6 +22,7 @@
 -   View network architecture and parameters of AI models in your training and inference projects. Please install the latest version of [Netron](https://github.com/lutzroeder/Netron/releases).
 -   Run remote machine jobs in Docker.
 -   Log in automatically to your password-based remote machines (e.g. Azure DSVM/DLVM). Please install the latest version of [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), and set the directory of putty.exe to %Path% environment variable.
+-   Add PyTorch application template.
 -   Experimental support for [Open Platform for AI (PAI)](https://github.com/Microsoft/pai).
     -   Submit training projects to PAI clusters.
     -   Manage jobs and files with GUI tools.

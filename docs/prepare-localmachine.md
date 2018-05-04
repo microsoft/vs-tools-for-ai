@@ -137,7 +137,7 @@ Please visit [here](https://code.visualstudio.com/docs/languages/python) for mor
 
 Setting up deep learning and machine learning software as well as their dependencies is not an easy task.
 We recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
-) to install all of them automatically across Windows, macOS and Linux.
+) to install them automatically across Windows, macOS and Linux.
 
 
 ## Essential packages
