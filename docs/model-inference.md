@@ -19,12 +19,15 @@ VS Tools for AI supports building apps using Tensorflow and ONNX models. Current
 >
 > [Intel MKL](https://software.intel.com/en-us/mkl) is licensed under the [Intel Simplified Software License](https://software.intel.com/en-us/license/intel-simplified-software-license).
 
-
 ## How to Create a Model Inference Library Project
 
 In order to enable easy integration of pre-trained models into .NET applications, Visual Studio Tools for AI allows users to create a C# wrapper over the raw model files. This offers simplified consistent APIs for user-friendly project reference.
 
-**NOTE**: The following steps need Python installed on your machine. Please configure a default Python environment by clicking menu items “Tools->Python->Python Environments”. Please ensure the Python environment chosen is installed with TensorFlow Python package.
+> [!NOTE]
+>
+> The following steps need Python installed on your machine.  
+
+Please configure a default Python environment by clicking menu items “Tools->Python->Python Environments” and ensure the Python environment selected is installed with TensorFlow Python package.
 
 ![Configure the default Python environment](/docs/media/model-inference/configure_python.png)
 
