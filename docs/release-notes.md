@@ -1,7 +1,7 @@
 # Release Notes
 
 ## 0.4.0.620119 (2018-05-06)
-We add many cool features in this release, which requires [newer version of Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio) and [upgrading CUDA / AI frameworks](/docs/prepare-localmachine.md).
+We add many cool features in this release, which requires [recent version of Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio) and [upgrading CUDA / AI frameworks](/docs/prepare-localmachine.md).
 
 Since setting up deep learning and machine learning software as well as their dependencies is not an easy task,
 we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to install them automatically.
