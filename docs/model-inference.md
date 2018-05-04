@@ -7,13 +7,18 @@ The library allows users to automatically optimize their models for model servin
 VS Tools for AI supports building apps using Tensorflow and ONNX models. Currently, the following versions are supported:
 -   ONNX
     -   Version: 1.0.1
-    -   CPU (MKL enabled) only
+    -   CPU (Intel MKL enabled) only
 -   TensorFlow
     -   Version: 1.5.0
-    -   CPU (MKL enabled) only
+    -   CPU (Intel MKL enabled) only
     -   Model formats: checkpoint and saved model only. Frozen model is not supported.
         -   For TensorFlow Checkpoint - all files including a checkpoint file, a meta file, and data files should be stored under the same folder. If your model contains TensorFlow lookup operations, please copy your vocabulary file to this folder as well.
         -   For TensorFlow SavedModel - all files including a pb file, data files and asset files should be stored under the same folder. Please do not import SavedModel files that were previously optimized by the library -this can result in unexpected errors.
+
+> [!NOTE]
+>
+> [Intel MKL](https://software.intel.com/en-us/mkl) is licensed under the [Intel Simplified Software License](https://software.intel.com/en-us/license/intel-simplified-software-license).
+
 
 ## How to Create a Model Inference Library Project
 
