@@ -1,14 +1,16 @@
  # Visual Studio Tools for AI
 Visual Studio Tools for AI is an extension to build, test, and deploy Deep Learning / AI solutions. It seamlessly integrates with Azure Machine Learning for robust experimentation capabilities, including but not limited to submitting data preparation and model training jobs transparently to different compute targets. Additionally, it provides support for custom metrics and run history tracking, enabling data science reproducibility and auditing. Enterprise ready collaboration, allow to securely work on project with other people.
 
-Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org), or other deep-learning frameworks today.  
+Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org), or other frameworks today.
 
 ## Quick Links
 **Getting Started**
 
+- [Release Notes](/docs/release-notes.md)
 - [Installation](/docs/installation.md)
 - [Prepare development environment](/docs/prepare-localmachine.md)
 - [Deep learning sample recipes](https://github.com/Microsoft/samples-for-ai)
+- [Frequently Asked Questions](/docs/faq.md)
 
 **Quickstarts**
 
@@ -30,6 +32,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 - [Build Intelligent Apps with Pre-trained AI Models](/docs/model-inference.md)
 - [Convert AI Models Between Frameworks](/docs/model-converter.md)
 - [View Network Architecture and Parameters of AI Models](/docs/model-viewer.md)
+
 
 # Supported Operating Systems
 Currently this extension supports 64-bit Windows operating systems.
@@ -71,6 +74,29 @@ This extension makes it easy to train models on your local computer or you can s
 [Learn more about training models in the cloud](/docs/tensorflow-vm.md) 
  
 ![submit job](/docs/media/submitjobs.png)
+
+## Build intelligent apps using pre-trained AI models
+Building intelligent applications in Visual Studio is as easy as adding your pre-trained model to your app, just like any other library or resource.
+Visual Studio Tools for AI includes an ML scoring library that offers simplified consistent APIs across TensorFlow and ONNX models. 
+
+The library allows users to automatically optimize their models for model serving, improving the model size for use in inferencing applications.
+Moreover, VS Tools for AI generates a C# stub class to simplify interaction with models in your app.
+These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution
+
+Visual Studio Tools for AI supports building apps using Tensorflow and ONNX models. Currently, the following versions are supported:
+-   ONNX
+    -   Version: 1.0.1
+    -   CPU (Intel MKL enabled) only
+-   TensorFlow
+    -   Version: 1.5.0
+    -   CPU (Intel MKL enabled) only
+    -   Model formats: checkpoint and saved model only. Frozen model is not supported.
+        -   For TensorFlow Checkpoint - all files including a checkpoint file, a meta file, and data files should be stored under the same folder. If your model contains TensorFlow lookup operations, please copy your vocabulary file to this folder as well.
+        -   For TensorFlow SavedModel - all files including a pb file, data files and asset files should be stored under the same folder. Please do not import SavedModel files that were previously optimized by the library -this can result in unexpected errors.
+
+> [!NOTE]
+>
+> [Intel MKL](https://software.intel.com/en-us/mkl) is licensed under the [Intel Simplified Software License](https://software.intel.com/en-us/license/intel-simplified-software-license).
 
 # Support
 Support for this extension is provided on our [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues). You can submit a bug report, a feature suggestion or participate in discussions.
