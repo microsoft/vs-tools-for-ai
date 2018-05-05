@@ -17,7 +17,7 @@ Once you've [installed Visual Studio Tools for AI](installation.md), it's easy t
 
 	![New Project from Existing Code, step 2](./media/azurebatch-newproject.png)
 
-> If your existing code is part of an Azure Machine Learning project, check the "**Is Azure Machine Learning folder**" to ensure successful conversion of important Azure Machine Learning configuration details like which Experimentation account, which Workspace, the compute contexts to use and more.
+> If your existing code is part of an Azure Machine Learning project, check the "**Is Azure Machine Learning folder**" to ensure successful conversion of important Azure Machine Learning configuration details like about Experimentation account, Workspace,  compute context and more.
 
 1. To set a startup file, locate the file in Solution Explorer, right-click, and select **Set as Startup File**.
 
