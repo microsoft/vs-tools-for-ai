@@ -10,7 +10,7 @@ Once you've [installed Visual Studio Tools for AI](installation.md), it will cre
 
 - <a id="list-services">Discover (list) all your subscribed cognitive services</a>. Refreshing (Double clicking or right-clicking and selecting refreshing) will list all the cognitive services subscribed in your account. 
 
-	*Note: If there are so many subscriptions (or resource groups) in your account that the refreshing goes too slow, please filter the subscriptions (and resource groups) by right clicking **Azure Cognitive Services** and selecting **Select Subscription**.*
+	*Note: If you have many subscriptions (or resource groups) in your account, you can filter the subscriptions (and resource groups) by right clicking **Azure Cognitive Services** and selecting **Select Subscription**.* This can make finding the service you are looking for easier.
 
 - <a id="service-properties">Query the basic information of cognitive service</a>. After listing the subscribed cognitive service, you could get further information of the service of interest. Right the the cognitive service and select **Documentation**, **Properties** or **Subscription Keys** to retrieve the information you want to query. The subscription keys and **Endpoint Location** (**Properties**) are necessary to authenticate your applications. 
 
