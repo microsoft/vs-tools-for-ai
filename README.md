@@ -30,7 +30,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 - [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
 - [Infuse Apps, Websites and Bots with Microsoft Cognitive Services](/docs/cognitive-services.md)
 - [Build Intelligent Apps with Pre-trained AI Models](/docs/model-inference.md)
-- [Convert AI Models Between Frameworks](/docs/model-converter.md)
+- [Convert trained models to ONNX](/docs/model-converter.md)
 - [View Network Architecture and Parameters of AI Models](/docs/model-viewer.md)
 
 

@@ -1,10 +1,12 @@
-## Overview
+# Generate code from trained models
 
-Building intelligent applications in Visual Studio is as easy as adding your pre-trained model to your app, just like any other library or resource. Visual Studio Tools for AI includes an ML scoring library that offers simplified consistent APIs across TensorFlow and ONNX models.
+Building intelligent applications in Visual Studio is as easy as adding your pre-trained model to your app, just like any other library or resource. Visual Studio Tools for AI generates code from your trained model to make it easy to get started, and includes the [Microsoft.ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) library that offers simplified consistent APIs across TensorFlow and ONNX models.
 
 The library allows users to automatically optimize their models for model serving, improving the model size for use in inferencing applications. Moreover, VS Tools for AI generates a C# stub class to simplify interaction with models in your app. These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
 
+## Supported model framework versions
 VS Tools for AI supports building apps using Tensorflow and ONNX models. Currently, the following versions are supported:
+
 -   ONNX
     -   Version: 1.0.1
     -   CPU (Intel MKL enabled) only
@@ -15,9 +17,7 @@ VS Tools for AI supports building apps using Tensorflow and ONNX models. Current
         -   For TensorFlow Checkpoint - all files including a checkpoint file, a meta file, and data files should be stored under the same folder. If your model contains TensorFlow lookup operations, please copy your vocabulary file to this folder as well.
         -   For TensorFlow SavedModel - all files including a pb file, data files and asset files should be stored under the same folder. Please do not import SavedModel files that were previously optimized by the library -this can result in unexpected errors.
 
-> [!NOTE]
->
-> [Intel MKL](https://software.intel.com/en-us/mkl) is licensed under the [Intel Simplified Software License](https://software.intel.com/en-us/license/intel-simplified-software-license).
+
 
 ## How to Create a Model Inference Library Project
 
@@ -63,28 +63,16 @@ In the interface editor dialog, please provide required data fields:
 + Inputs: This is collection of nodes in inference graph that holds input data like text, image, audio. The name column is the friendly name used in C# code and description is optional. Most important field is the internal name which is the full name of the input tensor or operation set by your training toolkit like TensorFlow or CNTK.
 + Outputs: This is collection of nodes in inference graph that produces result like category, value. Columns share the same semantic definition as that of Inputs.
 
-![Fill in information of model interface to call](/docs/media/model-inference/interface_dialog.png)
+    ![Fill in information of model interface to call](/media/model-inference/interface_dialog.png)
 
 The Interface Editor provides auto completion feature for your finding proper internal names. Typing several characters in the target TensorFlow operation name, a dropdown list will pops up and you can select the right one in this interface.
 
-![Auto completion list for internal names](/docs/media/model-inference/auto_completion.png)
+    ![Auto completion list for internal names](/media/model-inference/auto_completion.png)
 
 After filling all required fields, just click the OK button in the Wizard and Visual Studio client begins to create project, add ML scoring NuGet reference, prepare content files and generate code template that wraps interfaces of the model imported.
 
-## How to Include your Model Inference Library Project in apps
 
-Once you finish writing and refining your code, you can add a project reference to the library to build and run applications directly. Alternatively, you can publish it as a NuGet Package for others to consume in their applications like web services, desktop programs, etc.
 
-Right click the Model Inference Library project node in Solution Explorer and activate the menu item named “Export to NuGet Package”.
-
-![Click context menu item to package project](/docs/media/model-inference/create_nupkg.png)
-
-A pop-up dialog pops up and you need provide meta information of the package to create. Please refer to [Required Metadata Elements](https://docs.microsoft.com/en-us/nuget/schema/nuspec#required-metadata-elements) in NuGet WIKI. Visual Studio Tools for AI will set all other configuration items of NuGet package automatically for you.
-
-![Fill in the meta information of the NuGet package to create](/docs/media/model-inference/package_dialog.png)
-
-Clicking the OK button, Visual Studio Tools for AI will first build your project. If built successfully, it will generate the nuspec file and corresponding build.targets file in background. Then, the built-in nuget.exe is called to create the NuGet package of Model Inference Library project.
-
-Finally, a Windows Resource Manager window pops up redirecting to the directory containing built NuGet package. The output path is decided by your MSBuild configuration for the project.
-
-![Where to find the created NuGet package](/docs/media/model-inference/output_folder.png)
+> [!NOTE]
+>
+> [Intel MKL](https://software.intel.com/en-us/mkl) is licensed under the [Intel Simplified Software License](https://software.intel.com/en-us/license/intel-simplified-software-license).
