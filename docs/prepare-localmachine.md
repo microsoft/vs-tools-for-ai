@@ -61,37 +61,40 @@ Then, we verify whether Python is installed correctly, and upgrade pip to the la
 Suppose Python 3.5 is installed, please execute the following commands in a terminal:
 
 - **Windows**
-    ```cmd
-    C:\>python -V
-    Python 3.5.4
 
-    C:\>pip3 -V
-    pip 9.0.3 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+```cmd
+C:\>python -V
+Python 3.5.4
 
-    C:\>python -m pip install -U pip
-    ```
+C:\>pip3 -V
+pip 9.0.3 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+
+C:\>python -m pip install -U pip
+```
 
 - **macOS**
-    ```bash
-    MyMac:~ test$ python3 -V
-    Python 3.5.4
 
-    MyMac:~ test$ pip3 -V
-    pip 9.0.3 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+```bash
+MyMac:~ test$ python3 -V
+Python 3.5.4
 
-    MyMac:~ test$ python3 -m pip install -U pip
-    ```
+MyMac:~ test$ pip3 -V
+pip 9.0.3 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+
+MyMac:~ test$ python3 -m pip install -U pip
+```
 
 - **Linux**
-    ```bash
-    test@MyLinux:~$ python3 -V
-    Python 3.5.4
 
-    test@MyLinux:~$ pip3 -V
-    pip 9.0.3 from /usr/local/lib/python3.5/dist-packages (python 3.5)
+```bash
+test@MyLinux:~$ python3 -V
+Python 3.5.4
 
-    test@MyLinux:~$ sudo python3 -m pip install -U pip
-    ```
+test@MyLinux:~$ pip3 -V
+pip 9.0.3 from /usr/local/lib/python3.5/dist-packages (python 3.5)
+
+test@MyLinux:~$ sudo python3 -m pip install -U pip
+```
 
 ## Working with Python in Visual Studio on Windows
 
@@ -129,7 +132,6 @@ Then, select e.g. **Python 3.5 (64 bit)** and click ***Make this the default env
 Python is fully supported in Visual Studio Code through extensions.
 Please visit [here](https://code.visualstudio.com/docs/languages/python) for more details.
 
-
 ## Essential packages
 
 ### NumPy and SciPy
@@ -140,6 +142,7 @@ Please visit [here](https://code.visualstudio.com/docs/languages/python) for mor
 Starting from version 1.0.0, SciPy now has official prebuilt wheel package for Windows.
 
 To install NumPy and SciPy, run the following command in a terminal:
+
 ```bash
 pip3 install -U numpy scipy
 ```
@@ -153,6 +156,7 @@ pip3 install -U numpy scipy
 [Jupyter Notebook](http://jupyter.org/) is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
 
 To install Jupyter Notebook, run the following command in a terminal:
+
 ```bash
 pip3 install jupyter nbconvert
 ```
@@ -162,6 +166,7 @@ pip3 install jupyter nbconvert
 [Pandas](https://pandas.pydata.org/) is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
 
 To install Pandas, run the following command in a terminal:
+
 ```bash
 pip3 install pandas
 ```
@@ -171,10 +176,10 @@ pip3 install pandas
 [Matplotlib](https://matplotlib.org/) is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
 
 To install Matplotlib, run the following command in a terminal:
+
 ```bash
 pip3 install matplotlib
 ```
-
 
 ## Deep learning and machine learning frameworks
 
@@ -190,41 +195,52 @@ To install CNTK Python package, see [how to install CNTK](https://docs.microsoft
 > - CNTK GPU-1bit-SGD version is licensed under a specific [1bit-SGD License](https://docs.microsoft.com/en-us/cognitive-toolkit/cntk-1bit-sgd-license) which is MORE restrictive, than the major CNTK License.
 
 Briefly, to install CNTK Python package, run the following command in a terminal:
+
 - **Windows**
-    - With GPU
-        ```cmd
-        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.3.1-cp35-cp35m-win_amd64.whl
-        ```
-    - Without GPU
-        ```cmd
-        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp35-cp35m-win_amd64.whl
-        ```
+
+  - With GPU
+
+    ```cmd
+    pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.3.1-cp35-cp35m-win_amd64.whl
+    ```
+
+  - Without GPU
+
+    ```cmd
+    pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp35-cp35m-win_amd64.whl
+    ```
+
 - **Linux**
-    - With GPU
-        ```bash
-        pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.3.1-cp35-cp35m-linux_x86_64.whl
-        ```
-    - Without GPU
-        ```bash
-        pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp35-cp35m-linux_x86_64.whl
-        ```
+  - With GPU
+
+    ```bash
+    pip3 install https://cntk.ai/PythonWheel/GPU/cntk-2.3.1-cp35-cp35m-linux_x86_64.whl
+    ```
+
+  - Without GPU
+
+    ```bash
+    pip3 install https://cntk.ai/PythonWheel/CPU-Only/cntk-2.3.1-cp35-cp35m-linux_x86_64.whl
+    ```
 
 To install CNTK BrainScript package, run the following command in a terminal:
+
 - Visit [here](https://github.com/Microsoft/CNTK/releases/tag/v2.3.1) to download the CPU-only or GPU package.
 
 - **Windows**
-    - Decompress the zip file to "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK". Please create this folder if it does not exist.
-    - Add "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\cntk" to the %PATH% environment variable.
-    - Install Microsoft MPI from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\MSMpiSetup.exe", which is required by CNTK.
-    - Install Microsoft Visual C++ 2015 Redistributable from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\VS2015\vc_redist.x64.exe" if it is not installed yet.
+  - Decompress the zip file to "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK". Please create this folder if it does not exist.
+  - Add "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\cntk" to the %PATH% environment variable.
+  - Install Microsoft MPI from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\MSMpiSetup.exe", which is required by CNTK.
+  - Install Microsoft Visual C++ 2015 Redistributable from "%AppData%\Roaming\Microsoft\ToolsForAI\RuntimeSDK\cntk\prerequisites\VS2015\vc_redist.x64.exe" if it is not installed yet.
 
 - **Linux**
-    - Decompress the zip file to your home directory "~/".
-    - Add "~/cntk/cntk/bin" to the $PATH environment variable.
-    - Install OpenMPI by running the following command in a terminal:
-        ```bash
-        sudo apt-get install libopenmpi-dev
-        ```
+  - Decompress the zip file to your home directory "~/".
+  - Add "~/cntk/cntk/bin" to the $PATH environment variable.
+  - Install OpenMPI by running the following command in a terminal:
+
+    ```bash
+    sudo apt-get install libopenmpi-dev
+    ```
 
 ### TensorFlow
 
@@ -232,52 +248,62 @@ To install CNTK BrainScript package, run the following command in a terminal:
 Please refer to [here](https://www.tensorflow.org/install/) for detailed installation.
 
 To install TensorFlow, run the following command in a terminal:
+
 - With GPU
-    ```bash
-    pip3 install tensorflow-gpu==1.4.0
-    ```
+
+```bash
+pip3 install tensorflow-gpu==1.4.0
+```
+
 - Without GPU
-    ```bash
-    pip3 install tensorflow==1.4.0
-    ```
+
+```bash
+pip3 install tensorflow==1.4.0
+```
 
 ### PyTorch
 
 [PyTorch](http://pytorch.org/) is a python package that provides two high-level features:
+
 - Tensor computation (like numpy) with strong GPU acceleration
 - Deep Neural Networks built on a tape-based autograd system
 
 To install PyTorch, please run the following command in a terminal:
 
 - **Windows**
-    - There is no official wheel package yet. You could download a third-party Anaconda PyTorch package from [here](https://anaconda.org/peterjc123/pytorch/files). Please choose an appropriate file.
-    - Decompress it to, e.g. your home directory, "C:\Users\test\pytorch".
-    - Add "C:\Users\test\pytorch\Lib\site-packages" to the %PYTHONPATH% environment variable.
-    - Or, copy the contents in "C:\Users\test\pytorch\Lib\site-packages" to your Python distribution's "Lib\site-packages" subdirectory.
+  - There is no official wheel package yet. You could download a third-party Anaconda PyTorch package from [here](https://anaconda.org/peterjc123/pytorch/files). Please choose an appropriate file.
+  - Decompress it to, e.g. your home directory, "C:\Users\test\pytorch".
+  - Add "C:\Users\test\pytorch\Lib\site-packages" to the %PYTHONPATH% environment variable.
+  - Or, copy the contents in "C:\Users\test\pytorch\Lib\site-packages" to your Python distribution's "Lib\site-packages" subdirectory.
 
 - **macOS**
-    ```bash
-    - Python 3.5
-        pip3 install http://download.pytorch.org/whl/torch-0.3.0.post4-cp35-cp35m-macosx_10_6_x86_64.whl
-    - Python 3.6
-        pip3 install http://download.pytorch.org/whl/torch-0.3.0.post4-cp36-cp36m-macosx_10_7_x86_64.whl
-    ```
-    > [!NOTE]
-	>
-    > macOS binaries don't support CUDA, install from source if CUDA is needed
+
+```bash
+- Python 3.5
+    pip3 install http://download.pytorch.org/whl/torch-0.3.0.post4-cp35-cp35m-macosx_10_6_x86_64.whl
+- Python 3.6
+    pip3 install http://download.pytorch.org/whl/torch-0.3.0.post4-cp36-cp36m-macosx_10_7_x86_64.whl
+```
+
+> [!NOTE]
+>
+> macOS binaries don't support CUDA, install from source if CUDA is needed
 
 - **Linux**
-    ```bash
-    - Python 3.5
-        pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl
-    - Python 3.6
-        pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp36-cp36m-linux_x86_64.whl
-    ```
-    > [!NOTE]
-	>
-    > This single package supports both GPU and CPU.
+
+```bash
+- Python 3.5
+pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp35-cp35m-linux_x86_64.whl
+- Python 3.6
+pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.0.post4-cp36-cp36m-linux_x86_64.whl
+```
+
+  > [!NOTE]
+  >
+  > This single package supports both GPU and CPU.
 
 Finally, install torchvision on non-Windows:
+
 ```bash
 pip3 install torchvision
 ```
@@ -299,20 +325,25 @@ Please visit [here](https://caffe2.ai/docs/getting-started.html) to build from s
 It allows you to **mix** [symbolic and imperative programming](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) to maximize efficiency and productivity.
 
 To install MXNet, run the following command in a terminal:
+
 - With GPU
-    ```bash
-    pip3 install mxnet-cu80==1.0.0
-    ```
+
+```bash
+pip3 install mxnet-cu80==1.0.0
+```
+
 - Without GPU
-    ```bash
-    pip3 install mxnet==1.0.0
-    ```
+
+```bash
+pip3 install mxnet==1.0.0
+```
 
 ### Keras
 
 [Keras](https://keras.io/) is a high-level neural networks API, written in Python and capable of running on top of CNTK, TensorFlow or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
 
 To install Keras, please run the following command in a terminal:
+
 ```bash
 pip3 install Keras==2.1.2
 ```
@@ -322,6 +353,7 @@ pip3 install Keras==2.1.2
 [Theano](http://deeplearning.net/software/theano/) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
 
 To install Theano, please run the following command in a terminal:
+
 ```bash
 pip3 install Theano==1.0.1
 ```
@@ -332,6 +364,7 @@ pip3 install Theano==1.0.1
 It provides automatic differentiation APIs based on the **define-by-run approach** (a.k.a. dynamic computational graphs) as well as object-oriented high-level APIs to build and train neural networks.
 
 To enable CUDA support, install [CuPy](https://github.com/cupy/cupy):
+
 ```bash
 pip3 install cupy==2.2.0
 ```
@@ -344,12 +377,14 @@ to compile CuPy with CUDA 8.0.
 First, open a **VS2015 x64 Native Tools Command Prompt** or **Visual C++ 2015 x64 Native Tools Command Prompt**, and then execute the above cupy installation command.
 
 To install Chainer, please run the following command in a terminal:
+
 ```bash
 pip3 install chainer==3.2.0
 ```
 
 To enable multi-node distributed deep learning, please install
 [ChainerMN](https://github.com/chainer/chainermn) in a terminal:
+
 ```bash
 pip3 install chainermn
 ```
@@ -359,9 +394,9 @@ pip3 install chainermn
 [scikit-learn](scikit-learn.org) is a Python module for machine learning built on top of SciPy and distributed under the 3-Clause BSD license.
 
 To install scikit-learn, please run the following command in a terminal:
+
 ```bash
 pip3 install scikit-learn
 ```
-
 
 ## [Using a one-click installer to setup deep learning frameworks](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
