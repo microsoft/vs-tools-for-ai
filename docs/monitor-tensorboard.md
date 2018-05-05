@@ -6,6 +6,6 @@ You can visualize your model training progress with TensorBoard.
 
     ![run tensorboard](./media/run-tensorboard.png)
 
-1. Notice the error decreasing overtime, which means the quality is improving
+1. Notice the error decreases overtime, which means the quality is improving.
 
     ![run tensorboard](./media/tensorboard.png)
