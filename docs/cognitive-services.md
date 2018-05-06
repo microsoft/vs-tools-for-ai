@@ -1,12 +1,13 @@
-# Infuse AI into your apps with Cognitive Services
-Cognitive Services let you build intelligent apps with powerful algorithms using just a few lines of code. Visual Studio Tools for AI now easily enables you to discover, create and customize your Cognitive Services from within Visual Studio.
+# Infuse AI into your apps with Microsoft Cognitive Services
+Microsoft Cognitive Services are a set of APIs, SDKs and services available to developers to make your applications more intelligent, engaging and discoverable, with just a few lines of code.
+Visual Studio Tools for AI now easily enables you to discover, create and customize your cognitive services from within Visual Studio.
 
 ## Discover and Create Cognitive Services
 Once you've [installed Visual Studio Tools for AI](installation.md), it will create an **AI Tools** node in the **Server Explorer** of Visual Studio. By expanding the **AI Tools** node and selecting the **Azure Cognitive Services**, you could 
 
 - Create new service. By right-clicking **Azure Cognitive Services**, selecting **Create New Cognitive Service...** and filling the dialog accordingly, one can create new cognitive service. Below is the illustration of how to create new cognitive service.
 
-	![Create New Cognitive Service](./media/cognitive-services/create_service.gif)
+	![Create New Cognitive Service](./media/cognitive-services/create-service.gif)
 
 - <a id="list-services">Discover (list) all your subscribed cognitive services</a>. Refreshing (Double clicking or right-clicking and selecting refreshing) will list all the cognitive services subscribed in your account. 
 
@@ -22,7 +23,7 @@ Once you've [installed Visual Studio Tools for AI](installation.md), it will cre
 	2. In the **New Project** dialog, select "**AI Tools > Cognitive Services**", the supported application templates will be shown. 
 	3. After the application project created, view the source code and replace the strings such as `$Your_Subscription_Key$` and `$Your_Resource_Region$` to the service information queried.(Refer to [querying the service information](#service-properties))
 
-	![New Project From Template](./media/cognitive-services/create_project.gif)
+	![New Project From Template](./media/cognitive-services/create-project.gif)
 
 - Create new application based on subscribed cognitive services.
 
@@ -35,4 +36,4 @@ Customize your model in an automatable, repeatable manner by generating code whi
 
 Choose to call the Custom Vision Cognitive Service in Azure or use the CoreML or TensorFlow version of your model inside your app on the edge.
 
-![Customized your model](./media/cognitive-services/custom_vision.gif)
+![Customized your model](./media/cognitive-services/custom-vision.gif)
