@@ -122,7 +122,7 @@ Users need to setup the default Python environment in Visual Studio for AI proje
 E.g. Users install Python 3.5 manually, and Visual Studio 2017 Python development workload installs a 64-bit Python 3.6 automatically.
 Or users create several Anaconda virtual Python environments.
 
-To set the default Python environment globally for Visual Studio, please go to menu ***Tools > Python > Python Environments*** (Visual Studio 2017), or ***Tools > Python Tools > Python Environments*** (Visual Studio 2015).
+To set the default Python environment globally for Visual Studio, please go to menu **Tools > Python > Python Environments** (Visual Studio 2017), or **Tools > Python Tools > Python Environments** (Visual Studio 2015).
 Then, select e.g. **Python 3.5 (64 bit)** and click ***Make this the default environment for new projects*** button.
 
 ![Setting up the default Python environment](./media/prepare-local-machine/install_python_setup_default.png)
