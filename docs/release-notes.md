@@ -7,15 +7,15 @@ Since setting up deep learning and machine learning software as well as their de
 we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to install them automatically.
 
 
--   Infuse AI models into apps with Microsoft Machine Learning Scoring
-    -   Once training is complete, building intelligent applications in Visual Studio is as easy as putting your trained model in your app just like any other library or resource.
-    -   VS Tools for AI makes this easy by enabling you to create a Model Inference Library project which automatically optimizes your ONNX/TensorFlow model for serving, as well as placing on optimized ONNX/TensorFlow runtime in the project.
-    -   Moreover, VS Tools for AI generates a C# stub class to simplify interaction with models in your app.
-    -   These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
--   Infuse your apps, websites and bots with Microsoft [Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to see, hear, speak, understand and interpret your user needs through natural methods of communication.
+-   Infuse AI into your apps with [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to see, hear, speak, understand and interpret your user needs through natural methods of communication.
     -   Add Cognitive Services via GUI wizard and manage them in Visual Studio.
-    -   Build [Cognitive Service](https://www.customvision.ai/) apps from pre-defined templates.
-    -   Train and manage your own Custom Vision model from the generated training project or web portal.
+    -   Build Cognitive Service apps from pre-defined templates.
+    -   Train and manage your own [Custom Vision](https://www.customvision.ai/) model from the generated training project or web portal.
+-   Build intelligent apps using pre-trained AI models with the [Microsoft.ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) library 
+    -   Once training is complete, building intelligent apps in Visual Studio is as easy as putting your trained model in your app just like any other library or resource.
+    -   Visual Studio Tools for AI makes this easy by enabling you to create a Model Inference Library project which automatically optimizes your ONNX/TensorFlow model for serving, as well as placing on optimized ONNX/TensorFlow runtime in the project.
+    -   Moreover, Visual Studio Tools for AI generates a C# stub class to simplify interaction with models in your app.
+    -   These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
 -   Interoperation between different AI frameworks through model file conversion.
     -   Convert Core ML, TensorFlow, scikit-learn, XGBoost and LIBSVM models to [ONNX](https://onnx.ai/) format.
     -   Integration with WinMLTools, ONNXMLTools and tf2onnx converters.

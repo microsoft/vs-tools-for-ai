@@ -1,7 +1,7 @@
 # Converting models to ONNX
-[ONNX](https://onnx.ai/) is an open format to represent deep learning models. With ONNX, AI developers can more easily move models between state-of-the-art tools and choose the combination that is best for them. ONNX is developed and supported by a community of partners. To learn more about ONNX see [http://onnx.ai/](https://onnx.ai/)
+[ONNX](https://onnx.ai/) is an open format to represent deep learning models. With ONNX, AI developers can more easily move models between state-of-the-art tools and choose the combination that is best for them. ONNX is developed and supported by a community of partners.
 
-Converting models to ONNX makes it easy to use them in a wide variety of optimized applications. Visual Studio Tools for AI will [generate code from ONNX models and TensorFlow models](model-inference.md) to make it easy to include models in your applications. However, only ONNX models are supported by [WindowsML](https://docs.microsoft.com/en-us/windows/uwp/machine-learning/)
+Converting models to ONNX makes it easy to use them in a wide variety of optimized applications. Visual Studio Tools for AI will [generate code from ONNX models and TensorFlow models](model-inference.md) to make it easy to include models in your applications. However, only ONNX models are supported by [Windows Machine Learning (ML)](https://docs.microsoft.com/en-us/windows/uwp/machine-learning/).
 
 Visual Studio Tools for AI makes it easy to convert trained models to ONNX by leveraging existing model converters. You can learn more about the [model converter utilities here](https://github.com/onnx/onnx), or simply use the wizard in Visual Studio to create your ONNX model.
 
@@ -23,7 +23,7 @@ pip3 install tensorflow==1.5.0 scikit-learn onnx "git+https://github.com/apple/c
 ```
 
 ## Launch Model Converter
-- Launch Visual Studio and select **AI Tools > Model Tools > Convert Model...**.
+- Choose **AI Tools > Model Tools > Convert Model...** on the menu bar.
 - Select source model type and file.
 - Select target model type(we only support ONNX currently) and file.
 
@@ -50,8 +50,8 @@ You can convert two types of TensorFlow models to ONNX:
 ![Convert Sckikit](./media/model-converter/sklearn.png)
 
 ### Start Converting
-- Click OK button, it will check dependencies first.
-- If dependencies are all installed, a converter task will be added to task list explorer. 
-- When converter task succeeds, it will open a file explorer with target model selected.
+- After clicking the **OK** button, Visual Studio Tools for AI will first check whether dependent software is installed.
+- If yes, a converter task will be added to task list explorer. 
+- When the converter task succeeds, File Explorer is opened with the target model file selected.
 
 ![Convert Tasklist](./media/model-converter/tasklist.png)

@@ -2,10 +2,10 @@
 
 Building intelligent applications in Visual Studio is as easy as adding your pre-trained model to your app, just like any other library or resource. Visual Studio Tools for AI generates code from your trained model to make it easy to get started, and includes the [Microsoft.ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) library that offers simplified consistent APIs across TensorFlow and ONNX models.
 
-The library allows users to automatically optimize their models for model serving, improving the model size for use in inferencing applications. Moreover, VS Tools for AI generates a C# stub class to simplify interaction with models in your app. These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
+The library allows users to automatically optimize their models for model serving, improving the model size for use in inferencing applications. Moreover, Visual Studio Tools for AI generates a C# stub class to simplify interaction with models in your app. These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
 
 ## Supported model framework versions
-VS Tools for AI supports building apps using Tensorflow and ONNX models. Currently, the following versions are supported:
+Visual Studio Tools for AI supports building apps using Tensorflow and ONNX models. Currently, the following versions are supported:
 
 -   ONNX
     -   Version: 1.0.1

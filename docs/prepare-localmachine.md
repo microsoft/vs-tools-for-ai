@@ -492,7 +492,7 @@ There have been plenty of frameworks for users to build their own models.
 However, they differ with each other greatly on the implementation details.
 This will inevitably result in that models produced by one framework cannot be reused for subsequent training or inference in another framework, which brings inconvenience and increases cost to users on framework choice.
 
-Model file conversion is a feasible trial towards resolving this challenge.
+Model file conversion is a feasible trial towards such challenge.
 In the above subsections, we introduce several model converters: coremltools, onnxmltools, winmltools and tf2onnx, as well as their installation method.
 
 For Windows users, we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to setup these converters.

@@ -28,9 +28,9 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 - [Manage Storage](/docs/manage-storage.md)
 - [Monitor GPU Utilization](/docs/gpu-utilization.md)
 - [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
-- [Infuse Apps, Websites and Bots with Microsoft Cognitive Services](/docs/cognitive-services.md)
+- [Infuse AI into Your apps with Microsoft Cognitive Services](/docs/cognitive-services.md)
 - [Build Intelligent Apps with Pre-trained AI Models](/docs/model-inference.md)
-- [Convert trained models to ONNX](/docs/model-converter.md)
+- [Convert Trained Models to ONNX](/docs/model-converter.md)
 - [View Network Architecture and Parameters of AI Models](/docs/model-viewer.md)
 
 
@@ -72,7 +72,7 @@ Visual Studio Tools for AI makes it easy to train models on your local computer 
  
 ![submit job](/docs/media/submitjobs.png)
 
-## Infuse apps, websites and bots with Microsoft Cognitive Services
+## Infuse AI into your apps with Microsoft Cognitive Services
 [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) are a set of APIs, SDKs and services available to developers to make your applications more intelligent, engaging and discoverable, with just a few lines of code.
 Visual Studio Tools for AI now easily enables you to discover, create and customize your cognitive services from within Visual Studio.
 
@@ -82,14 +82,26 @@ Visual Studio Tools for AI now easily enables you to discover, create and custom
 
 ## Build intelligent apps using pre-trained AI models
 Building intelligent applications in Visual Studio is as easy as adding your pre-trained model to your app, just like any other library or resource.
-Visual Studio Tools for AI includes the [Microsoft.ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) that offers simplified consistent APIs across TensorFlow and ONNX models.
+Visual Studio Tools for AI includes the [Microsoft.ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) library that offers simplified consistent APIs across TensorFlow and ONNX models.
 
-Moreover, VS Tools for AI generates a C# stub class to simplify interaction with models in your app.
-These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution. 
+Moreover, Visual Studio Tools for AI generates a C# stub class to simplify interaction with models in your app.
+These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
 
 [Learn more about using pre-trained AI models](/docs/model-inference.md)
 
 ![import a model](/docs/media/model-inference/importer_dialog.png)
+
+## Interoperation between different AI frameworks through model file conversion
+There have been many AI frameworks for users to build their own models.
+However, they differ with each other greatly on the implementation details.
+This will inevitably result in that models produced by one framework cannot be reused for subsequent training or inference in another framework, which brings inconvenience and increases cost to users on framework choice.
+Model file conversion is a feasible trial towards such challenge.
+
+Visual Studio Tools for AI now easily enables you to convert Core ML, TensorFlow, scikit-learn, XGBoost and LIBSVM models to [ONNX](https://onnx.ai/) format by leveraging existing model converters.
+
+[Learn more about model file conversion](/docs/model-converter.md)
+
+![convert TensorFlow model to ONNX](/docs/media/model-converter/tensorflow.png)
 
 
 # Support
