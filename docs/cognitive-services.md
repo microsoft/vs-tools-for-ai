@@ -2,7 +2,7 @@
 Microsoft Cognitive Services are a set of APIs, SDKs and services available to developers to make your applications more intelligent, engaging and discoverable, with just a few lines of code.
 Visual Studio Tools for AI now easily enables you to discover, create and customize your cognitive services from within Visual Studio.
 
-## Discover and Create Cognitive Services
+## Discover and create cognitive services
 By selecting the **AI Tools > Azure Cognitive Services** node on the Server Explorer panel, you could :
 
 -	Create new cognitive services.
@@ -36,7 +36,7 @@ Visual Studio Tools for AI provides more than one way to infuse AI to your appli
 
 - Add SDK reference to an existing .NET Framework project. 
 
-## Retrain Custom Vision Cognitive Service
+## Retrain Custom Vision service
 Customize your model in an automatable, repeatable manner by generating code which will use your own images to retrain and download your model. 
 
 Choose to call the Custom Vision Cognitive Service in Azure or use the Core ML or TensorFlow version of your model inside your app on the edge.
