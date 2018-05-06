@@ -9,7 +9,7 @@ we recommend that you use the [one-click installer](https://github.com/Microsoft
 
 -   Infuse AI into your apps with [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to see, hear, speak, understand and interpret your user needs through natural methods of communication.
     -   Add Cognitive Services via GUI wizard and manage them in Visual Studio.
-    -   Build Cognitive Service apps from pre-defined templates.
+    -   Build Cognitive Service apps from pre-defined project templates.
     -   Train and manage your own [Custom Vision](https://www.customvision.ai/) model from the generated training project or web portal.
 -   Build intelligent apps using pre-trained AI models with the [Microsoft.ML.Scoring](https://www.nuget.org/packages/Microsoft.ML.Scoring/) library 
     -   Once training is complete, building intelligent apps in Visual Studio is as easy as putting your trained model in your app just like any other library or resource.
