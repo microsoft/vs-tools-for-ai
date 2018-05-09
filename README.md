@@ -1,4 +1,7 @@
  # Visual Studio Tools for AI
+
+[简体中文](docs/zh-hans/README.md)
+
 Visual Studio Tools for AI is an extension to build, test, and deploy Deep Learning / AI solutions. It seamlessly integrates with Cloud AI services such as Azure Machine Learning for robust experimentation capabilities, including but not limited to submitting data preparation and model training jobs transparently to different compute targets. Additionally, it provides support for custom metrics and run history tracking, enabling data science reproducibility and auditing. Enterprise ready collaboration, allow to securely work on project with other people.
 
 Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org), [PyTorch](https://pytorch.org/), [Apache MXNet](https://mxnet.incubator.apache.org/) or other frameworks today.
@@ -6,32 +9,32 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 ## Quick Links
 **Getting Started**
 
-- [Release Notes](/docs/release-notes.md)
-- [Installation](/docs/installation.md)
-- [Prepare development environment](/docs/prepare-localmachine.md)
+- [Release Notes](docs/release-notes.md)
+- [Installation](docs/installation.md)
+- [Prepare development environment](docs/prepare-localmachine.md)
 - [Deep learning sample recipes](https://github.com/Microsoft/samples-for-ai)
-- [Frequently Asked Questions](/docs/faq.md)
+- [Frequently Asked Questions](docs/faq.md)
 
 **Quickstarts**
 
-- [Tensorflow + Python](/docs/tensorflow-local.md)
-- [Create AI project from samples gallery](/docs/quickstart-00-project-from-azuremachinelearning-gallery.md)
-- [Create AI project from existing code](/docs/quickstart-01-project-from-existing.md)
-- [Create AI project from template](/docs/quickstart-02-project-from-template.md)
-- [Create AI project from samples repository](/docs/quickstart-03-project-from-repository.md)
-- [Train MNIST using TensorFlow in Azure Batch AI](/docs/quickstart-04-train-azure-batchai.md)
+- [Tensorflow + Python](docs/tensorflow-local.md)
+- [Create AI project from samples gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md)
+- [Create AI project from existing code](docs/quickstart-01-project-from-existing.md)
+- [Create AI project from template](docs/quickstart-02-project-from-template.md)
+- [Create AI project from samples repository](docs/quickstart-03-project-from-repository.md)
+- [Train MNIST using TensorFlow in Azure Batch AI](docs/quickstart-04-train-azure-batchai.md)
 
 **Tutorials**
 
-- [Monitor & Visualize with TensorBoard](/docs/monitor-tensorboard.md)
-- [Monitor Job History](/docs/job-history.md)
-- [Manage Storage](/docs/manage-storage.md)
-- [Monitor GPU Utilization](/docs/gpu-utilization.md)
-- [TensorFlow + Azure Deep Learning VM](/docs/tensorflow-vm.md)
-- [Infuse AI into Your apps with Microsoft Cognitive Services](/docs/cognitive-services.md)
-- [Build Intelligent Apps with Pre-trained AI Models](/docs/model-inference.md)
-- [Convert Trained Models to ONNX](/docs/model-converter.md)
-- [View Network Architecture and Parameters of AI Models](/docs/model-viewer.md)
+- [Monitor & Visualize with TensorBoard](docs/monitor-tensorboard.md)
+- [Monitor Job History](docs/job-history.md)
+- [Manage Storage](docs/manage-storage.md)
+- [Monitor GPU Utilization](docs/gpu-utilization.md)
+- [TensorFlow + Azure Deep Learning VM](docs/tensorflow-vm.md)
+- [Infuse AI into Your apps with Microsoft Cognitive Services](docs/cognitive-services.md)
+- [Build Intelligent Apps with Pre-trained AI Models](docs/model-inference.md)
+- [Convert Trained Models to ONNX](docs/model-converter.md)
+- [View Network Architecture and Parameters of AI Models](docs/model-viewer.md)
 
 
 ## Supported Operating Systems
@@ -54,31 +57,31 @@ For the Visual Studio Code version please see [Visual Studio Code Tools for AI](
 ## Develop, debug and deploy deep learning models and AI solutions  
 Use the productivity features of Visual Studio to accelerate AI innovation today. Use built-in code editor features like syntax highlighting, IntelliSense and text auto formatting. You can interactively test your deep learning application in your local environment using step-through debugging on local variables and models. 
 
-[Learn more about creating deep learning projects in Visual Studio](/docs/quickstart-02-project-from-template.md)
+[Learn more about creating deep learning projects in Visual Studio](docs/quickstart-02-project-from-template.md)
 
-![deep learning ide](/docs/media/ide.png)
+![deep learning ide](docs/media/ide.png)
 
 ## Get started quickly with the Azure Machine Learning Sample Gallery  
 Visual Studio Tools for AI is integrated with Azure Machine Learning to make it easy to browse through a gallery of sample experiments using CNTK, TensorFlow, MMLSpark and more. 
 
-[Learn more about creating projects from the sample gallery](/docs/quickstart-00-project-from-azuremachinelearning-gallery.md) 
+[Learn more about creating projects from the sample gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md) 
  
-![sample explorer](/docs/media/gallery.png)
+![sample explorer](docs/media/gallery.png)
 
 ## Scale out deep learning model training and/or inferencing to the cloud
 Visual Studio Tools for AI makes it easy to train models on your local computer or you can submit jobs to the cloud by using our integration with Azure Machine Learning. You can submit jobs to different compute targets like Spark clusters, Azure GPU virtual machines and more  
 
-[Learn more about training models in the cloud](/docs/tensorflow-vm.md) 
+[Learn more about training models in the cloud](docs/tensorflow-vm.md) 
  
-![submit job](/docs/media/submitjobs.png)
+![submit job](docs/media/submitjobs.png)
 
 ## Infuse AI into your apps with Microsoft Cognitive Services
 [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) are a set of APIs, SDKs and services available to developers to make your applications more intelligent, engaging and discoverable, with just a few lines of code.
 Visual Studio Tools for AI now easily enables you to discover, create and customize your cognitive services from within Visual Studio.
 
-[Learn more about working with Microsoft Cognitive Services](/docs/cognitive-services.md)
+[Learn more about working with Microsoft Cognitive Services](docs/cognitive-services.md)
 
-![create a new cognitive service](/docs/media/cognitive-services/create-service.png)
+![create a new cognitive service](docs/media/cognitive-services/create-service.png)
 
 ## Build intelligent apps using pre-trained AI models
 Building intelligent applications in Visual Studio is as easy as adding your pre-trained model to your app, just like any other library or resource.
@@ -87,9 +90,9 @@ Visual Studio Tools for AI includes the [Microsoft.ML.Scoring](https://www.nuget
 Moreover, Visual Studio Tools for AI generates a C# stub class to simplify interaction with models in your app.
 These Model Inference Library projects can be further deployed as NuGet packages for convenient distribution.
 
-[Learn more about using pre-trained AI models](/docs/model-inference.md)
+[Learn more about using pre-trained AI models](docs/model-inference.md)
 
-![import a model](/docs/media/model-inference/importer_dialog.png)
+![import a model](docs/media/model-inference/importer_dialog.png)
 
 ## Interoperation between different AI frameworks through model file conversion
 There have been many AI frameworks for users to build their own models.
@@ -99,9 +102,9 @@ Model file conversion is a feasible trial towards such challenge.
 
 Visual Studio Tools for AI now easily enables you to convert Core ML, TensorFlow, scikit-learn, XGBoost and LIBSVM models to [ONNX](https://onnx.ai/) format by leveraging existing model converters.
 
-[Learn more about model file conversion](/docs/model-converter.md)
+[Learn more about model file conversion](docs/model-converter.md)
 
-![convert TensorFlow model to ONNX](/docs/media/model-converter/tensorflow.png)
+![convert TensorFlow model to ONNX](docs/media/model-converter/tensorflow.png)
 
 
 # Support

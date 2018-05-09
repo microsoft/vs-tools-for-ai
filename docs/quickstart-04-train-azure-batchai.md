@@ -30,7 +30,7 @@ It's integrated with Visual Studio Tools for AI so you can dynamically scale out
 
 	![Sample gallery](./media/tensorflowexamples.png)
 
-5. Set MNIST project as the **Startup Project **
+5. Set MNIST project as the **Startup Project**
 
 	![Sample gallery](./media/mnist-startup.png)
 

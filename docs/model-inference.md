@@ -25,7 +25,7 @@ Visual Studio Tools for AI supports building apps using Tensorflow and ONNX mode
 
 In order to enable easy integration of pre-trained models into .NET applications, Visual Studio Tools for AI allows users to create a C# wrapper over the raw model files. This offers simplified consistent APIs for user-friendly project reference.
 
-Please install Python, [set the default Python environment](https://github.com/Microsoft/vs-tools-for-ai/blob/master/docs/prepare-localmachine.md#setting-up-the-default-python-environment) globally for Visual Studio, and ensure TensorFlow package has been installed in the default environment.
+Please install Python, [set the default Python environment](prepare-localmachine.md#setting-up-the-default-python-environment) globally for Visual Studio, and ensure TensorFlow package has been installed in the default environment.
 
 ![Configure the default Python environment](./media/model-inference/configure_python.png)
 
