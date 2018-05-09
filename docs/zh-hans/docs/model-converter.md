@@ -6,7 +6,7 @@
 
 通过已有的模型转换程序，Visual Studio Tools for AI能够很方便的将训练好的模型转换为ONNX。 了解更多关于[模型转换工具](https://github.com/onnx/onnx)，或使用Visual Studio的向导来创建ONNX模型。
 
-Visual Studio Tools for AI用以下框架来讲机器学习和深度学习框架的模型转换为ONNX：
+Visual Studio Tools for AI用以下框架来将机器学习和深度学习框架的模型转换为ONNX：
 
 - Core ML
 - TensorFlow
