@@ -52,6 +52,12 @@ At present, Visual Studio Tools for AI does not support IntelliSense for CNTK Br
 
 ## Microsoft Cognitive Services
 
+### **Q: [The Computer Vision application created from template always returns "Unauthorized" error.](https://github.com/Microsoft/vs-tools-for-ai/issues/15)**
+This is a known issue in the Computer Vision application template. Please open the ComputerVisionApiExtensions.cs, and add the following line of code in ComputerVisionApiExtensions class's constructor:
+```csharp
+this.AzureRegion = GetRegion(region);
+```
+
 ### **Q: I cannot retrieve subscription keys or create applications due to `Unauthorized` status code.**
 Please right-click **AI Tools > Azure Cognitive Services** node on the Server Explorer panel, and select **Refresh**.
 
