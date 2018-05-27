@@ -368,7 +368,7 @@ pip3 install chainer==4.0.0
 To enable multi-node distributed deep learning, please install
 [ChainerMN](https://github.com/chainer/chainermn) in a terminal:
 ```bash
-pip3 install chainermn
+pip3 install chainermn==1.3.0
 ```
 
 ### scikit-learn
