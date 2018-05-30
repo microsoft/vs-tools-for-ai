@@ -1,17 +1,22 @@
 files:
   - source: /**/*.md
+    ignore:
+      - /docs/zh-hans
     translation: /docs/%locale_with_underscore%/%original_path%/%original_file_name%
     languages_mapping:
       locale_with_underscore:
         zh-CN: zh-hans
   - source: /**/*.png
+    ignore:
+      - /docs/zh-hans
     translation: /docs/%locale_with_underscore%/%original_path%/%original_file_name%
     languages_mapping:
       locale_with_underscore:
         zh-CN: zh-hans
   - source: /**/*.gif
+    ignore:
+      - /docs/zh-hans
     translation: /docs/%locale_with_underscore%/%original_path%/%original_file_name%
     languages_mapping:
       locale_with_underscore:
         zh-CN: zh-hans
-

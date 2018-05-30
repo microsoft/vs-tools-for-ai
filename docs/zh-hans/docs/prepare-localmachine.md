@@ -448,7 +448,7 @@ pip3 install onnxmltools
 
 ### Microsoft ML 工具 (winmltools)
 
-[winmltools](https://pypi.python.org/pypi/winmltools)能讲不通的机器学习工具包中的模型转换为用于Windows机器学习的ONNX。
+[winmltools](https://pypi.python.org/pypi/winmltools)能将不同的机器学习工具包中的模型转换为用于Windows机器学习的ONNX。
 
 要安装winmltools，在终端中运行以下命令：
 

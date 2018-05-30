@@ -68,4 +68,4 @@ Visual Studio Tools for AI支持应用使用TensorFlow和ONNX模型。 目前支
 
 ![内部名称的自动完成列表](./media/model-inference/auto_completion.png)
 
-填写完所有需要的字段后，点击向导中的OK按钮，Visual Studio则开始创建项目，添加机器学习s评分的NuGet引用，准备内容文件，生成导入模型的接口代码模板。
+填写完所有需要的字段后，点击向导中的OK按钮，Visual Studio则开始创建项目，添加ML scoring的NuGet引用，准备内容文件，生成导入模型的接口代码模板。
