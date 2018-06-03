@@ -296,7 +296,7 @@ To install PyTorch, please run the following command in a terminal:
 
 Finally, install torchvision:
 ```bash
-pip3 install torchvision
+pip3 install torchvision==0.2.1
 ```
 
 ### Caffe2
@@ -365,11 +365,13 @@ To install Chainer, please run the following command in a terminal:
 pip3 install chainer==4.0.0
 ```
 
+<!---
 To enable multi-node distributed deep learning, please install
 [ChainerMN](https://github.com/chainer/chainermn) in a terminal:
 ```bash
 pip3 install chainermn==1.3.0
 ```
+-->
 
 ### scikit-learn
 
@@ -440,7 +442,7 @@ To install coremltools, please run the following command in a terminal:
     ```
 - **Non-Windows**
     ```bash
-    pip3 install coremltools
+    pip3 install coremltools==0.8
     ```
 
 ### ONNX ML Tool (onnxmltools)
@@ -452,7 +454,7 @@ Currently the following toolkits (need installation) are supported:
 
 To install onnxmltools, please run the following command in a terminal:
 ```bash
-pip3 install onnxmltools
+pip3 install onnxmltools==1.0.0.0
 ```
 
 ### Microsoft ML Tool (winmltools)
@@ -461,7 +463,7 @@ pip3 install onnxmltools
 
 To install winmltools, please run the following command in a terminal:
 ```bash
-pip3 install winmltools
+pip3 install winmltools==0.1.0.5072
 ```
 
 ### tf2onnx
@@ -499,5 +501,5 @@ For Windows users, we recommend that you use the [one-click installer](https://g
 If you wish to install them by yourself, first go to the third-party web site to install unofficial [XGBoost](https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost) and [LIBSVM](https://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm) 64-bit Windows packages,
 and then run the following command in a terminal:
 ```bash
-pip3 install tensorflow==1.5.0 scikit-learn onnx "git+https://github.com/apple/coremltools@v0.8" onnxmltools winmltools "git+https://github.com/onnx/tensorflow-onnx.git@r0.1"
+pip3 install tensorflow==1.5.0 scikit-learn==0.19.1 onnx "git+https://github.com/apple/coremltools@v0.8" onnxmltools==1.0.0.0 winmltools==0.1.0.5072 "git+https://github.com/onnx/tensorflow-onnx.git@r0.1"
 ```
