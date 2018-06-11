@@ -6,6 +6,12 @@ Before training deep learning models on your local or remote computer you should
 >
 > Software introduction in the following subsectons is excerpted from their homepages.
 
+## One-click installer
+
+Setting up deep learning and machine learning software as well as their dependencies is not an easy task.
+After you have installed NVIDIA GPU driver, CUDA, cuDNN and Python, we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to install them automatically across Windows, macOS and Linux.
+
+
 ## NVIDIA GPU driver, CUDA and cuDNN
 
 ### NVIDIA GPU driver
@@ -39,7 +45,16 @@ To install cuDNN
 ## Python
 
 Python has been the primary programming language for deep learning applications.
-**64-bit** Python distribution is required, and the latest [Python 3.5](https://www.python.org/downloads/release/python-354/) is recommended for the best compatibility.
+**64-bit** Python 3.5 or 3.6 distribution is required, and the latest [Python 3.5](https://www.python.org/downloads/release/python-354/) is recommended for the best compatibility.
+
+> [!NOTE]
+>
+> 1. 32-bit Python is not supported because CNTK, TensorFlow and etc. frameworks do not support it.
+> 2. Please run the following command in a terminal. If the return value is "64bit", we are sure that 64-bit Python is installed:
+>
+> ```bash
+> python3 -c "import platform; print(platform.architecture()[0])"
+> ```
 
 Please add Python directory to the %PATH% or $PATH environment variable.
 You also need to install **pip**, which is the package management system to install and manage software packages written in Python.
@@ -136,8 +151,7 @@ Please visit [here](https://code.visualstudio.com/docs/languages/python) for mor
 ## One-click installer
 
 Setting up deep learning and machine learning software as well as their dependencies is not an easy task.
-We recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks)
-) to install them automatically across Windows, macOS and Linux.
+We recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to install them automatically across Windows, macOS and Linux.
 
 
 ## Essential packages
@@ -151,7 +165,7 @@ Starting from version 1.0.0, SciPy now has official prebuilt wheel package for W
 
 To install NumPy and SciPy, run the following command in a terminal:
 ```bash
-pip3 install numpy==1.14.2 scipy==1.0.1
+pip3 install numpy==1.14.3 scipy==1.1.0
 ```
 
 > [!NOTE]
@@ -318,11 +332,11 @@ It allows you to mix [symbolic and imperative programming](http://mxnet.io/archi
 To install MXNet, run the following command in a terminal:
 - With GPU
     ```bash
-    pip3 install mxnet-cu90==1.1.0.post0
+    pip3 install mxnet-cu90==1.2.0
     ```
 - Without GPU
     ```bash
-    pip3 install mxnet==1.1.0.post0
+    pip3 install mxnet==1.2.0
     ```
 
 ### Keras
@@ -331,7 +345,7 @@ To install MXNet, run the following command in a terminal:
 
 To install Keras, please run the following command in a terminal:
 ```bash
-pip3 install Keras==2.1.5
+pip3 install Keras==2.1.6
 ```
 
 ### Theano
@@ -340,7 +354,7 @@ pip3 install Keras==2.1.5
 
 To install Theano, please run the following command in a terminal:
 ```bash
-pip3 install Theano==1.0.1
+pip3 install Theano==1.0.2
 ```
 
 ### Chainer
@@ -349,20 +363,26 @@ pip3 install Theano==1.0.1
 It provides automatic differentiation APIs based on the **define-by-run approach** (a.k.a. dynamic computational graphs) as well as object-oriented high-level APIs to build and train neural networks.
 
 To enable CUDA support, install [CuPy](https://github.com/cupy/cupy):
-```bash
-pip3 install cupy==4.0.0
-```
+- **Linux**
+    ```bash
+    pip3 install cupy-cuda90==4.1.0
+    ```
+- **Non-Linux**
+    ```bash
+    pip3 install cupy==4.1.0
+    ```
+
 
 > [!NOTE]
 >
 > On Windows, you need **2015** version of [Microsoft Visual Studio](https://www.visualstudio.com/)
 or [Microsoft Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
-to compile CuPy with CUDA 8.0.
+to compile CuPy with CUDA.
 First, open a **VS2015 x64 Native Tools Command Prompt** or **Visual C++ 2015 x64 Native Tools Command Prompt**, and then execute the above cupy installation command.
 
 To install Chainer, please run the following command in a terminal:
 ```bash
-pip3 install chainer==4.0.0
+pip3 install chainer==4.1.0
 ```
 
 <!---

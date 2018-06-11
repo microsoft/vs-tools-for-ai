@@ -1,5 +1,16 @@
 # Release Notes
 
+## 0.4.1.664470 (2018-06-11)
+Please install [recent version of Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio) and [upgrade CUDA / AI frameworks](prepare-localmachine.md).
+
+Since setting up deep learning and machine learning software as well as their dependencies is not an easy task,
+we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to install them automatically.
+
+-   Initial Simplified Chinese language support.
+-   CUDA 9.0 and recent version of AI frameworks support.
+-   Bug fixes and stability improvements.
+
+
 ## 0.4.0.620119 (2018-05-06)
 We add many cool features in this release, which requires [recent version of Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/update-visual-studio) and [upgrading CUDA / AI frameworks](prepare-localmachine.md).
 
@@ -7,6 +18,7 @@ Since setting up deep learning and machine learning software as well as their de
 we recommend that you use the [one-click installer](https://github.com/Microsoft/samples-for-ai/#using-a-one-click-installer-to-setup-deep-learning-frameworks) to install them automatically.
 
 
+-   CUDA 9.0 and recent version of AI frameworks support.
 -   Infuse AI into your apps with [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to see, hear, speak, understand and interpret your user needs through natural methods of communication.
     -   Add Cognitive Services via GUI wizard and manage them in Visual Studio.
     -   Build Cognitive Service apps from pre-defined project templates.
