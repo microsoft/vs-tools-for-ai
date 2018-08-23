@@ -2,7 +2,7 @@
 -
     By selecting **AI Tools -> Send Feedback -> Contact us via Email**. The default Email app (eg: outlook) would pop up with the **reciever** and **subject** filled.
 
-    ![Contact us via Email](./media/feedback/ContactUsViaEmail.PNG)
+    ![Contact us via Email](./media/feedback/ContactUsViaEmail.png)
 
 ##	Proactive Feedback Collect
 -   Trigger points includes 
@@ -15,4 +15,4 @@
     1. If user close the dialog directly, remind after 7 days.
     2. Never remind the user again after submitted once.
 
-	![Proactive Feedback Collect](./media/feedback/ProactiveFeedback.PNG)
+	![Proactive Feedback Collect](./media/feedback/ProactiveFeedback.png)
