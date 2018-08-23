@@ -6,7 +6,7 @@
 
 ##	Proactive Feedback Collect
 -   Trigger points includes 
-    1. Finished creating Training/Inference/CogSrv Project;
+    1. Finished creating Training/Inference/Cognitive Service Project;
     2. Convert model succeed; 
     3. On browse Job Node/Storage Node; 
     4. Submit Job succeed;
