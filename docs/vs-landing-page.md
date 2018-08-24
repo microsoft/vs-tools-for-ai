@@ -1,7 +1,16 @@
 # Landing Page
-By selecting the **AI Tools > Start Page** , you could open tools for AI start page.
 
-- <a>Build your first AI application.</a> You could start to build your first AI application by click hyperclick "here".
+A new Tools for AI Start Page is built to accelerate the start to build AI solution with:
+- instructions to guide you to build the first AI application/train the first AI Model within 3 steps; 
+- AI inferencing/training samples and AI related learning materials to quickly learn and start build their own AI solutions. 
+
+By selecting the **AI Tools > Start Page** , you could open Tools for AI start page.
+![StartPage1](media/vs-landing-page/start-page.png)
+
+
+## Build your first AI application
+
+You could start to build your first AI application by clicking hyperclick "here".
 
    ![Build1](./media/vs-landing-page/build1.png)
 
@@ -11,14 +20,19 @@ By selecting the **AI Tools > Start Page** , you could open tools for AI start p
 
    ![Solution](./media/vs-landing-page/solution.png)
    
- - <a>Build other inferencing or training samples.</a> You could build other inferencing or training samples by click "Download" button.
+## Sample Gallery Page 
+You could open sample Gallery page by clicking hyperlink "More".
+![More](./media/vs-landing-page/more.png)
 
-    ![OtherBuild](./media/vs-landing-page/otherBuild.png)
+In sample gallery page, you could search AI samples and try to build samples you like.
 
-- <a>Sample Gallery Page.</a> You could open sample Gallery page by click hyperlink "More".
+![SampleGallery](./media/vs-landing-page/sampleGallery.png)
 
-    ![More](./media/vs-landing-page/more.png)
 
-    In sample gallery page, you could search AI samples and try to build samples you like.
+## Build other inferencing or training samples
+  You could build other inferencing or training samples by clicking "Download" button.
+ ![OtherBuild](./media/vs-landing-page/otherBuild.png)
 
-    ![SampleGallery](./media/vs-landing-page/sampleGallery.png)
+ ## Stop opening the landing page with the start-up of Visual Studio
+
+ You can uncheck the switch of "Open this page on next start-up" on the bottom of the page to turn off the automatic opening of landing page.
