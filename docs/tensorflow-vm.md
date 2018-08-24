@@ -65,7 +65,21 @@ User can also submit jobs to run in a Docker container:
 
 - User can choose the identity to run Docker container in remote machine. The default user is "root".
 
-
+- To facilite different kinds of DL framework job submission (CNTK, Tensorflow, Keras, .etc), we built a customized docker image contains popular DL frameworks, and hosted the image on [Docker Hub](https://hub.docker.com/). The [all-in-one](https://hub.docker.com/r/toolsforai/all-in-one/) docker image includes the following libraries:
+```
+Ubuntu 16.04 LTS
+CUDA 9.0, CuDNN 7.0
+numpy 1.14.3,scipy 1.1.0,Jupyter Notebook,Pandas,Matplotlib,sklearn 0.19.1
+CNTK 2.5.1
+TensorFlow 1.5.0
+PyTorch 0.4.0
+MXNet 1.2.0
+Keras 2.1.6
+Theano 1.0.2
+Chainer 4.1.0
+```
+  User can choose this all-in-one image in 'Docker Setting's drop down list:
+  ![All-in-on-docker](./media/tensorflow-vm/all-in-one-docker.png)
 ## Check status of job 
 To see status and details of jobs: expand the virtual machine you submitted the job to in the **Server Explorer**. Double click on **Jobs**.
 
