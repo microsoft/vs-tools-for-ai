@@ -19,7 +19,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 
 - [Quick start from new Start Page](docs/vs-landing-page.md)
 - [Tensorflow + Python](docs/tensorflow-local.md)
-- [Create AI project from samples gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md)
+- [Create AI project from Azure Machine Learning gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md)
 - [Create AI project from existing code](docs/quickstart-01-project-from-existing.md)
 - [Create AI project from template](docs/quickstart-02-project-from-template.md)
 - [Create AI project from samples repository](docs/quickstart-03-project-from-repository.md)
