@@ -1,12 +1,18 @@
-##  Contact us via Email
+# Feedback in Visual Studio Tools for AI
+If you have any issues, questions or suggestions, you have two approaches to contact us:
+
+## GitHub
+By selecting **AI Tools -> Send Feedback -> Report Issue on GitHub**, the [Visual Studio Tools for AI issues page](https://github.com/Microsoft/vs-tools-for-ai/issues) will be opened in browser for you to give feedback to us. 
+
+##  Email
 -
-    By selecting **AI Tools -> Send Feedback -> Contact us via Email**. The default Email app (eg: outlook) would pop up with the **To...** and **Subject** filled.
+    By selecting **AI Tools -> Send Feedback -> Contact us via Email**, the default Email app (eg: outlook) would pop up with the **To...** and **Subject** filled.
 
     ![Contact us via Email](./media/feedback/ContactUsViaEmail.png)
 
     ![Feedback Outlook](./media/feedback/Feedback_outlook.png)
 
-##	Proactive Feedback Collect
+##	Proactive Feedback Collection
 -   The proactive feedback dialog would pop-up in following trigger points: 
     1. Finished creating Training/Inference/Cognitive Service Project;
     2. Convert model succeed; 
