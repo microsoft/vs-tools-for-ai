@@ -1,6 +1,6 @@
 # Landing Page
 
-A new Tools for AI Start Page is built to accelerate the start to build AI solution with:
+Tools for AI Start Page is built to accelerate the start to build AI solution with:
 - instructions to guide you to build the first AI application/train the first AI Model within 3 steps; 
 - AI inferencing/training samples and AI related learning materials to quickly learn and start build their own AI solutions. 
 

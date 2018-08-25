@@ -9,7 +9,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 ## Quick Links
 **Getting Started**
 
-- [Release Notes](docs/release-notes.md)
+- [Release notes](docs/release-notes.md)
 - [Installation](docs/installation.md)
 - [Prepare development environment](docs/prepare-localmachine.md)
 - [Deep learning sample recipes](https://github.com/Microsoft/samples-for-ai)
@@ -17,7 +17,7 @@ Get started with deep learning using [Microsoft Cognitive Toolkit (CNTK)](http:/
 
 **Quickstarts**
 
-- [Quick start from new Start Page](docs/vs-landing-page.md)
+- [Quick start from Start Page](docs/vs-landing-page.md)
 - [Tensorflow + Python](docs/tensorflow-local.md)
 - [Create AI project from Azure Machine Learning gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md)
 - [Create AI project from existing code](docs/quickstart-01-project-from-existing.md)
@@ -62,11 +62,18 @@ Use the productivity features of Visual Studio to accelerate AI innovation today
 
 ![deep learning ide](docs/media/ide.png)
 
-## Get started quickly with the Azure Machine Learning Sample Gallery  
-Visual Studio Tools for AI is integrated with Azure Machine Learning to make it easy to browse through a gallery of sample experiments using CNTK, TensorFlow, MMLSpark and more. 
+## Get started quickly with the Start Page  
+Tools for AI Start Page is built to accelerate your start in AI world with 
+- Easy instructions to guide you to build your first AI application within 3 steps;
+- AI inferencing/training samples and AI related learning materials for you to quickly learn and build your own AI solutions. 
 
-[Learn more about creating projects from the sample gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md) 
- 
+
+[Learn more about Start Page](docs/vs-landing-page.md)  
+![sample explorer](docs/media/vs-landing-page/start-page.png)
+
+Moreover, Visual Studio Tools for AI is integrated with Azure Machine Learning to make it easy to browse through a gallery of sample experiments using CNTK, TensorFlow, MMLSpark and more. 
+
+[Learn more about creating projects from the sample gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md)  
 ![sample explorer](docs/media/gallery.png)
 
 ## Scale out deep learning model training and/or inferencing to the cloud
