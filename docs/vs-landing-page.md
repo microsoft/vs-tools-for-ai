@@ -1,10 +1,10 @@
 # Landing Page
 
-Tools for AI Start Page is built to accelerate the start to build AI solution with:
-- instructions to guide you to build the first AI application/train the first AI Model within 3 steps; 
-- AI inferencing/training samples and AI related learning materials to quickly learn and start build their own AI solutions. 
+Tools for AI Start Page is built to accelerate the start of building AI solution with:
+- instructions to guide you to build the first AI application within 3 steps; 
+- AI inferencing/training samples and AI related learning materials to quickly learn and start build your own AI solutions. 
 
-By selecting the **AI Tools > Start Page** , you could open Tools for AI start page.
+The start page is with the start-up of Visual Studio by default for convenience. By selecting the **AI Tools > Start Page** , you could also manually open it.
 ![StartPage1](media/vs-landing-page/start-page.png)
 
 
