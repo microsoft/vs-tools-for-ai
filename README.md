@@ -69,12 +69,14 @@ Tools for AI Start Page is built to accelerate your start in AI world with
 
 
 [Learn more about Start Page](docs/vs-landing-page.md)  
-![sample explorer](docs/media/vs-landing-page/start-page.png)
+
+![sample explorer](docs/media/vs-landing-page/start-page.PNG)
 
 Moreover, Visual Studio Tools for AI is integrated with Azure Machine Learning to make it easy to browse through a gallery of sample experiments using CNTK, TensorFlow, MMLSpark and more. 
 
 [Learn more about creating projects from the sample gallery](docs/quickstart-00-project-from-azuremachinelearning-gallery.md)  
-![sample explorer](docs/media/gallery.png)
+
+![AML sample explorer](docs/media/gallery.png)
 
 ## Scale out deep learning model training and/or inferencing to the cloud
 Visual Studio Tools for AI makes it easy to train models on your local computer or you can submit jobs to the cloud by using our integration with Azure Machine Learning. You can submit jobs to different compute targets like Spark clusters, Azure GPU virtual machines and more  
