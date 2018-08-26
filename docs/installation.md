@@ -19,3 +19,5 @@ Please save it as ".vsix" and then install it locally.**
 
 ![extensions](media/installation/search_extension.png)
 
+4. After installation of the Tools for AI as an extension, next time when Visual Studio starts, there will be [new Installation Page](vs-installation-page.md) opened to guild you complete the installation of other AI development dependent environment.
+

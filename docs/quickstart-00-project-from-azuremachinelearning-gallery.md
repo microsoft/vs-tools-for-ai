@@ -6,7 +6,7 @@ Once you've [installed Visual Studio Tools for AI](installation.md), it's easy t
 
 > ! Azure Machine Learning Workbench must be installed. To install it please see the [Azure Machine Learning installation quickstart](https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation) 
 
-1. Launch Visual Studio. Open the **Server Explorer** by opening the **AI Tools** menu and choosing **Select Cluster**	
+1. Launch Visual Studio. Open the **Server Explorer** by opening the **AI Tools** menu and choosing **AI Services**	
 
     ![Cluster chooser](./media/select-cluster.png)
 
@@ -14,7 +14,7 @@ Once you've [installed Visual Studio Tools for AI](installation.md), it's easy t
 
     ![login](./media/azureml-login.png)
  
-2. Select **AI Tools > Azure Machine Learning Sample Gallery**. 
+1. Right click **Azure Machine Learning**, click **Azure Machine Learning Sample Gallery** in the contexture menu to open the Azure Machine Learning gallery. 
 	
     ![Sample gallery](./media/gallery.png)
 
