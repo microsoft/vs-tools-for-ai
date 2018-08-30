@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.5.0.752675 (2018-08-30)
+- Fix an issue that the most recent version of Visual Studio cannot install the extension.
+
+
 ## 0.5.0.747136 (2018-08-25)
 - When first starting Tools for AI, an installation page is shown for guiding local AI development environment setup. Users can launch a one-click installer from this page to install required software packages into the default Python environment.
 - We design a new start page to help users build first AI application / train first AI Model within 3 steps. The start page also contains useful AI examples and development resources.
