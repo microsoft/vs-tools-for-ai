@@ -1,6 +1,6 @@
 # Release Notes
 
-## 0.5.0.755748
+## 0.5.0.755748 (2018-09-02)
 - Fix an issue that proventing users from importing some format of ONNX model.
 
 ## 0.5.0.752675 (2018-08-30)
