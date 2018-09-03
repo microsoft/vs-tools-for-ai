@@ -1,7 +1,7 @@
 # Release Notes
 
 ## 0.5.0.755748 (2018-09-02)
-- Fix an issue that proventing users from importing some format of ONNX model.
+- Fix an issue that preventing users from importing some format of ONNX model.
 
 ## 0.5.0.752675 (2018-08-30)
 - Fix an issue that the most recent version of Visual Studio cannot install the extension.
